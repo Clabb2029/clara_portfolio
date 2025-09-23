@@ -1,0 +1,31 @@
+{
+    "files.associations": {
+        "*.css": "tailwindcss"
+    },
+    "[typescript]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[typescriptreact]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "editor.codeActionsOnSave": ["source.organizeImports", "source.fixAll.eslint"],
+    "editor.formatOnSave": true,
+    "cursor.cpp.disabledLanguages": ["markdown", "untitled", "properties", "ssh_config"],
+    "[json]": {
+        "editor.defaultFormatter": "vscode.json-language-features"
+    },
+    "files.exclude": {
+        "**/.env": true
+    },
+    "workbench.editor.wrapTabs": true,
+    "workbench.editor.enablePreview": false,
+    "[jsonc]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[javascript]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[html]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    }
+}
