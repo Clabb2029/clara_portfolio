@@ -1,5 +1,6 @@
 import JungleBackground from '@/components/JungleBackground';
 import ScrollIndicator from '@/components/ScrollIndicator';
+import Technologies from '@/components/Technologies';
 import { Leaf, LeafyGreen } from 'lucide-react';
 
 export default function Home() {
@@ -34,6 +35,10 @@ export default function Home() {
                     </button>
                 </div>
                 <ScrollIndicator />
+            </div>
+
+            <div className="relative z-10 bg-black/40 backdrop-blur-sm">
+                <Technologies />
             </div>
         </div>
     );
