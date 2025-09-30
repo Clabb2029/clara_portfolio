@@ -22,7 +22,7 @@ export default function About() {
                         </div>
 
                         {/* First text note */}
-                        <div className="flex justify-center lg:justify-end max-w-xs order-2 bg-gradient-to-br from-emerald-50 to-emerald-100 rounded-xs p-8 shadow-2xl -rotate-10 relative ">
+                        <div className="flex justify-center lg:justify-end max-w-xs order-2 bg-gradient-to-br from-lime-100 to-lime-200 rounded-xs p-8 shadow-2xl -rotate-10 relative bg-">
                             <img src="/about/pin.png" alt="Pin" className="absolute top-0 left-1/2 w-10 h-10 rotate-20 z-10" />
                             <p className="text-gray-800 leading-relaxed font-shadown font-semibold mt-10 text-xs sm:text-sm md:text-md">
                                 Salut, moi c'est Clara 👋 Je suis développeuse fullstack et ce qui me plaît, c'est de transformer des idées
@@ -38,7 +38,7 @@ export default function About() {
                         </div>
 
                         {/* Second text note */}
-                        <div className="flex justify-center lg:justify-start max-w-xs order-4 md:order-3 lg:order-4 bg-gradient-to-br from-emerald-50 to-emerald-100 rounded-xs p-8 shadow-2xl -rotate-12 relative h-fit">
+                        <div className="flex justify-center lg:justify-start max-w-xs order-4 md:order-3 lg:order-4 bg-gradient-to-br from-teal-200 to-teal-300 rounded-xs p-8 shadow-2xl -rotate-12 relative h-fit">
                             <img src="/about/pin.png" alt="Pin" className="absolute top-0 left-2/5 w-10 h-10 -rotate-70 z-10" />
                             <p className="text-gray-800 leading-relaxed font-shadown font-semibold mt-10 text-xs sm:text-sm md:text-md">
                                 En dehors de l'écran, je suis une grande amoureuse des plantes ! Et depuis peu, un petit chiot partage mon
@@ -59,7 +59,7 @@ export default function About() {
                         </div>
 
                         {/* Third text note */}
-                        <div className="flex justify-center lg:justify-end max-w-xs order-6 bg-gradient-to-br from-emerald-50 to-emerald-100 rounded-xs p-8 shadow-2xl -rotate-8 relative">
+                        <div className="flex justify-center lg:justify-end max-w-xs order-6 bg-gradient-to-br from-emerald-100 to-emerald-200 rounded-xs p-8 shadow-2xl -rotate-8 relative">
                             <img src="/about/pin.png" alt="Pin" className="absolute top-0 left-4/9 w-10 h-10 z-10" />
                             <p className="text-gray-800 leading-relaxed font-shadown font-semibold mt-10 text-xs sm:text-sm md:text-md">
                                 Si tu veux en savoir un peu plus sur mon parcours, tu peux jeter un œil à mon CV. Et si tu as un projet web
