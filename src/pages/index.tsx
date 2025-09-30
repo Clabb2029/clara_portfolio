@@ -1,3 +1,4 @@
+import About from '@/components/About';
 import JungleBackground from '@/components/JungleBackground';
 import ScrollIndicator from '@/components/ScrollIndicator';
 import Technologies from '@/components/Technologies';
@@ -39,6 +40,7 @@ export default function Home() {
 
             <div className="relative z-10 bg-black/40 backdrop-blur-sm">
                 <Technologies />
+                <About />
             </div>
         </div>
     );
