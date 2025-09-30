@@ -1,4 +1,4 @@
-import { Download } from 'lucide-react';
+import { ExternalLink } from 'lucide-react';
 
 export default function About() {
     return (
@@ -49,9 +49,12 @@ export default function About() {
                         {/* Download CV button */}
                         <div className="flex justify-center lg:justify-center my-auto w-50 m-5 order-5 bg-gradient-to-br from-emerald-50 to-emerald-100 rounded-xs p-8 shadow-2xl rotate-15 relative">
                             <img src="/about/pin.png" alt="Pin" className="absolute top-0 left-2/5 w-10 h-10 -rotate-70 z-10" />
-                            <button className="cursor-pointer px-8 py-3 text-sm bg-gradient-to-r from-green-500 to-emerald-600 text-white rounded-full font-semibold hover:from-green-600 hover:to-emerald-700 transform hover:scale-102 transition-all duration-300 mt-10 flex items-center gap-2">
-                                <Download size={30} />
-                                Télécharger mon CV
+                            <button
+                                className="cursor-pointer px-8 py-3 text-sm bg-gradient-to-r from-green-500 to-emerald-600 text-white rounded-full font-semibold hover:from-green-600 hover:to-emerald-700 transform hover:scale-102 transition-all duration-300 mt-10 flex items-center gap-2"
+                                onClick={() => window.open('/about/CV_SLYS_Clara.pdf', '_blank')}
+                            >
+                                <ExternalLink size={30} />
+                                Consulter mon CV
                             </button>
                         </div>
 
