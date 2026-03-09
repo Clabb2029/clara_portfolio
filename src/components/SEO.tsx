@@ -1,21 +1,20 @@
+import { useTranslations } from 'next-intl';
 import Head from 'next/head';
 
 export default function SEO() {
+    const t = useTranslations('seo');
     return (
         <Head>
             <meta charSet="utf-8" />
             <meta name="viewport" content="width=device-width, initial-scale=1" />
-            <title>Clara Slys - Développeuse Web FullStack</title>
+            <title>{t('title')}</title>
             <meta name="robots" content="index, follow" />
-            <meta
-                name="description"
-                content="Développeuse web Fullstack spécialisée en JavaScript, Java, Angular et React. Découvrez mes projets et mon univers."
-            />
+            <meta name="description" content={t('description')} />
 
             {/* Basic SEO */}
             <meta
                 name="keywords"
-                content="Clara Slys, Développeuse Web, FullStack, Portfolio, Contact, Projets, A propos, Technologies, CV"
+                content="Clara Slys, Développeuse Web, FullStack Developer, Portfolio, Contact, Projets, Projects, A propos, About, Technologies, CV, Resume"
             />
             <meta name="author" content="Clara Slys" />
             <link rel="canonical" href="https://www.clara-slys.fr" />
@@ -25,11 +24,8 @@ export default function SEO() {
             <link rel="apple-touch-icon" sizes="180x180" href="/icons/apple-touch-icon.png" />
             <link rel="icon" type="image/png" sizes="192x192" href="/icons/android-chrome-192x192.png" />
             <link rel="icon" type="image/png" sizes="512x512" href="/icons/android-chrome-512x512.png" />
-            <meta property="og:title" content="Clara Slys - Développeuse Web FullStack" />
-            <meta
-                property="og:description"
-                content="Développeuse web Fullstack spécialisée en JavaScript, Java, Angular et React. Découvrez mes projets et mon univers."
-            />
+            <meta property="og:title" content={t('title')} />
+            <meta property="og:description" content={t('description')} />
 
             {/* Open Graph */}
             <meta property="og:type" content="website" />
@@ -38,11 +34,8 @@ export default function SEO() {
 
             {/* Twitter Card */}
             <meta name="twitter:card" content="summary_large_image" />
-            <meta name="twitter:title" content="Clara Slys - Développeuse Web FullStack" />
-            <meta
-                name="twitter:description"
-                content="Développeuse web Fullstack spécialisée en JavaScript, Java, Angular et React. Découvrez mes projets et mon univers."
-            />
+            <meta name="twitter:title" content={t('title')} />
+            <meta name="twitter:description" content={t('description')} />
             <meta name="twitter:image" content="https://www.clara-slys.fr/icons/preview.png" />
 
             {/* Schema.org */}
@@ -55,16 +48,15 @@ export default function SEO() {
                             {
                                 '@type': 'Person',
                                 name: 'Clara Slys',
-                                jobTitle: 'Développeuse web FullStack',
+                                jobTitle: t('job-title'),
                                 url: 'https://www.clara-slys.fr',
                                 image: 'https://www.clara-slys.fr/icons/preview.png',
                                 sameAs: ['https://github.com/Clabb2029/', 'https://www.linkedin.com/in/clara-slys/'],
-                                description:
-                                    'Développeuse web Fullstack spécialisée en JavaScript, Java, Angular et React. Découvrez mes projets et mon univers.',
+                                description: t('description'),
                             },
                             {
                                 '@type': 'WebSite',
-                                name: 'Clara Slys - Développeuse Web FullStack',
+                                name: t('title'),
                                 url: 'https://www.clara-slys.fr',
                                 potentialAction: {
                                     '@type': 'SearchAction',

@@ -25,5 +25,10 @@
         "note3": "Si tu veux en savoir un peu plus sur mon parcours, tu peux jeter un œil à mon CV. Et si tu as un projet web en tête ou simplement envie d'échanger, je serais ravie d'en discuter avec toi. Tu peux m'écrire directement via le formulaire de contact que tu retrouveras juste en dessous 👇",
         "cta": "Consulter mon CV",
         "resume-link": "CV_SLYS_Clara.pdf"
+    },
+    "seo": {
+        "title": "Clara Slys - Développeuse Web FullStack",
+        "description": "Développeuse web Fullstack spécialisée en JavaScript, Java, Angular et React. Découvrez mes projets et mon univers.",
+        "job-title": "Développeuse web Fullstack"
     }
 }
