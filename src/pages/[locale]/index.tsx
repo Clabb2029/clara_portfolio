@@ -1,4 +1,5 @@
 import About from '@/components/About';
+import Footer from '@/components/Footer';
 import JungleBackground from '@/components/JungleBackground';
 import LanguageSwitch from '@/components/LanguageSwitch';
 import ScrollIndicator from '@/components/ScrollIndicator';
@@ -61,6 +62,7 @@ export default function Home() {
                 <div className="relative z-10 bg-black/40 backdrop-blur-sm">
                     <Technologies />
                     <About />
+                    <Footer />
                 </div>
             </div>
         </>

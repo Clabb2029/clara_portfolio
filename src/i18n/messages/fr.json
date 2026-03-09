@@ -26,6 +26,16 @@
         "cta": "Consulter mon CV",
         "resume-link": "CV_SLYS_Clara.pdf"
     },
+    "footer": {
+        "technologies": "Technologies",
+        "about": "À propos",
+        "experiences": "Expériences",
+        "contact": "Contact",
+        "legal-mentions": "Mentions légales",
+        "privacy-policy": "Politique de confidentialité",
+        "available": "Développeuse web fullstack freelance — disponible pour de nouvelles missions.",
+        "copyright": "Clara Slys. Réalisé avec Next.js."
+    },
     "seo": {
         "title": "Clara Slys - Développeuse Web FullStack",
         "description": "Développeuse web Fullstack spécialisée en JavaScript, Java, Angular et React. Découvrez mes projets et mon univers.",

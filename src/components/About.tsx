@@ -5,7 +5,7 @@ import Image from 'next/image';
 export default function About() {
     const t = useTranslations('about');
     return (
-        <section className="py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-r from-green-900/50 to-emerald-900/50">
+        <section id="about" className="py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-r from-green-900/50 to-emerald-900/50">
             <div className="max-w-9/10 lg:max-w-4/5 mx-auto text-center">
                 <h2 className="text-3xl sm:text-4xl font-bold text-white mb-8">
                     {t('title')} <span className="text-emerald-400">{t('title2')}</span>

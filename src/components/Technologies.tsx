@@ -59,7 +59,7 @@ export default function Technologies() {
     ];
 
     return (
-        <section className="py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-r from-green-900/30 to-emerald-900/30">
+        <section id="technologies" className="py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-r from-green-900/30 to-emerald-900/30">
             <div className="max-w-9/10 xl:max-w-3/4 mx-auto text-center">
                 <h2 className="text-3xl sm:text-4xl font-bold text-white mb-8">
                     {t('title')} <span className="text-emerald-400">{t('title2')}</span>
