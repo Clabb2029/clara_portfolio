@@ -6,8 +6,8 @@ export default function ScrollIndicator() {
             <div className="hidden sm:flex w-6 h-10 border-2 border-green-400 rounded-full justify-center">
                 <div className="w-1 h-3 bg-green-400 rounded-full mt-2 animate-pulse"></div>
             </div>
-            <div className="flex sm:hidden w-8 h-8 rounded-full justify-center">
-                <ChevronsDown className="w-8 h-8 text-green-400 animate-pulse" />
+            <div className="flex sm:hidden size-8 rounded-full justify-center">
+                <ChevronsDown className="size-8 text-green-400 animate-pulse" />
             </div>
         </div>
     );

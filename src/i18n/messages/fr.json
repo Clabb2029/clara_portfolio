@@ -1,0 +1,29 @@
+{
+    "home": {
+        "subtitle": "Développeuse Web FullStack passionnée",
+        "ctaProjects": "Découvrir mes projets",
+        "ctaContact": "Me contacter"
+    },
+    "technologies": {
+        "title": "Technologies",
+        "title2": "Maîtrisées",
+        "languages": "Langages",
+        "frameworks": "Frameworks",
+        "libraries": "Librairies",
+        "databases": "Bases de données",
+        "tests": "Tests",
+        "tools": "Outils"
+    },
+    "about": {
+        "title": "Derrière",
+        "title2": "l'Écran",
+        "pin-alt": "Punaise",
+        "plant-alt": "Plante enneigée",
+        "mochi-alt": "Mochi chiot",
+        "note1": "Salut, moi c'est Clara 👋 Je suis développeuse fullstack et ce qui me plaît, c'est de transformer des idées en projets concrets, utiles et bien pensés. J'aime travailler autant sur la partie technique que sur l'expérience utilisateur, parce que pour moi un bon projet, c'est un mélange d'efficacité et de simplicité !",
+        "note2": "En dehors de l'écran, je suis une grande amoureuse des plantes ! Et depuis peu, un petit chiot partage mon quotidien, ce qui m'apprend la patience et la créativité autrement qu'avec du code !",
+        "note3": "Si tu veux en savoir un peu plus sur mon parcours, tu peux jeter un œil à mon CV. Et si tu as un projet web en tête ou simplement envie d'échanger, je serais ravie d'en discuter avec toi. Tu peux m'écrire directement via le formulaire de contact que tu retrouveras juste en dessous 👇",
+        "cta": "Consulter mon CV",
+        "resume-link": "CV_SLYS_Clara.pdf"
+    }
+}

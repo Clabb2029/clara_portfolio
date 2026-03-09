@@ -1,6 +1,9 @@
+import { useTranslations } from 'next-intl';
 import TechnologiesCard from './TechnologiesCard';
 
 export default function Technologies() {
+    const t = useTranslations('technologies');
+
     const langages = [
         { name: 'JavaScript', src: './languages/javascript.png' },
         { name: 'TypeScript', src: './languages/typescript.png' },
@@ -59,16 +62,21 @@ export default function Technologies() {
         <section className="py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-r from-green-900/30 to-emerald-900/30">
             <div className="max-w-9/10 xl:max-w-3/4 mx-auto text-center">
                 <h2 className="text-3xl sm:text-4xl font-bold text-white mb-8">
-                    Technologies <span className="text-emerald-400">Maîtrisées</span>
+                    {t('title')} <span className="text-emerald-400">{t('title2')}</span>
                 </h2>
 
                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-                    <TechnologiesCard technologies={langages} title="Langages" />
-                    <TechnologiesCard technologies={frameworks} title="Frameworks" />
-                    <TechnologiesCard technologies={libraries} title="Librairies" />
-                    <TechnologiesCard technologies={databases} title="Bases de données" />
-                    <TechnologiesCard technologies={tests} title="Tests" />
-                    <TechnologiesCard technologies={tools} title="Outils" />
+                    {[
+                        { technologies: langages, title: t('languages') },
+                        { technologies: frameworks, title: t('frameworks') },
+                        { technologies: libraries, title: t('libraries') },
+                        { technologies: databases, title: t('databases') },
+                        { technologies: tests, title: t('tests') },
+                        { technologies: tools, title: t('tools') },
+                    ].map(({ technologies, title }) => {
+                        const uniqueTechnologies = Array.from(new Map(technologies.map((tech) => [tech.name, tech])).values());
+                        return <TechnologiesCard key={title} technologies={uniqueTechnologies} title={title} />;
+                    })}
                 </div>
             </div>
         </section>

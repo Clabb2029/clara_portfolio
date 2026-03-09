@@ -1,0 +1,29 @@
+{
+    "home": {
+        "subtitle": "FullStack Web Developer",
+        "ctaProjects": "Discover my projects",
+        "ctaContact": "Contact me"
+    },
+    "technologies": {
+        "title": "Mastered",
+        "title2": "Technologies",
+        "languages": "Languages",
+        "frameworks": "Frameworks",
+        "libraries": "Libraries",
+        "databases": "Databases",
+        "tests": "Tests",
+        "tools": "Tools"
+    },
+    "about": {
+        "title": "Behind",
+        "title2": "the Screen",
+        "pin-alt": "Pin",
+        "plant-alt": "Snow-covered plant",
+        "mochi-alt": "Puppy Mochi",
+        "note1": "Hello, I'm Clara 👋 I'm a fullstack developer and what I love is turning ideas into concrete, useful and well thought out projects. I enjoy working on both the technical and user experience aspects, because for me, a good project is a mix of efficiency and simplicity!",
+        "note2": "Off-screen, I'm a huge plant lover! And recently, a little puppy has joined my daily life, which teaches me patience and creativity in a way other than coding!",
+        "note3": "If you'd like to know more about my background, you can take a look at my Resume. And if you have a web project in mind or simply want to chat, I would be happy to discuss it with you. You can contact me directly using the form below 👇",
+        "cta": "View my CV",
+        "resume-link": "EN_RESUME_SLYS_Clara.pdf"
+    }
+}
