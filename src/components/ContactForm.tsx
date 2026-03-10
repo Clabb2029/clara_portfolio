@@ -3,6 +3,7 @@
 import { useTranslations } from 'next-intl';
 import { FormEvent, useCallback, useState } from 'react';
 import { useGoogleReCaptcha } from 'react-google-recaptcha-v3';
+import toast from 'react-hot-toast';
 
 export default function ContactForm() {
     const t = useTranslations('contact');
@@ -21,13 +22,13 @@ export default function ContactForm() {
             e.preventDefault();
 
             if (!isFormValid()) {
-                alert(t('invalid-form'));
+                toast.error(t('invalid-form'));
                 setIsFormDisabled(false);
                 return;
             }
 
             if (!executeRecaptcha) {
-                alert(t('recaptcha-not-loaded'));
+                toast.error(t('recaptcha-not-loaded'));
                 setIsFormDisabled(false);
                 return;
             }
@@ -49,13 +50,13 @@ export default function ContactForm() {
                     throw new Error('Failed to send email');
                 }
 
-                alert(t('email-sent'));
+                toast.success(t('email-sent'));
                 setFormData({ from_name: '', company: '', from_email: '', subject: '', message: '' });
                 setStatus('success');
                 setIsFormDisabled(false);
             } catch (error) {
                 console.error(error);
-                alert(t('email-error'));
+                toast.error(t('email-error'));
                 setStatus('error');
                 setIsFormDisabled(false);
             }
