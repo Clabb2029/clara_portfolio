@@ -60,7 +60,7 @@ export default function Home() {
                     <ScrollIndicator />
                 </div>
 
-                <div className="relative z-10 bg-black/40 backdrop-blur-sm">
+                <div className="relative bg-black/40 backdrop-blur-sm">
                     <Technologies />
                     <About />
                     <ContactForm />

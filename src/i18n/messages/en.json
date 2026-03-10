@@ -40,7 +40,8 @@
         "message": "Message",
         "message-placeholder": "Enter your message",
         "send": "Send",
-        "form-not-found": "Form not found. Please try again later.",
+        "recaptcha-not-loaded": "The captcha has not been loaded. Please try again later.",
+        "invalid-form": "The form is invalid. Please fill in all required fields.",
         "email-sent": "Email sent successfully!",
         "email-error": "Error sending email. Please try again later."
     },

@@ -1,42 +1,67 @@
 'use client';
 
-import emailjs from '@emailjs/browser';
 import { useTranslations } from 'next-intl';
-import { FormEvent, useRef, useState } from 'react';
+import { FormEvent, useCallback, useState } from 'react';
+import { useGoogleReCaptcha } from 'react-google-recaptcha-v3';
 
 export default function ContactForm() {
     const t = useTranslations('contact');
     const [isFormDisabled, setIsFormDisabled] = useState(false);
-    const form = useRef<HTMLFormElement>(null);
+    const [formData, setFormData] = useState({ from_name: '', company: '', from_email: '', subject: '', message: '' });
+    const { executeRecaptcha } = useGoogleReCaptcha();
+    const [status, setStatus] = useState<'idle' | 'loading' | 'success' | 'error'>('idle');
 
-    const sendEmail = (e: FormEvent<HTMLFormElement>) => {
-        setIsFormDisabled(true);
-        e.preventDefault();
-        if (!form.current) {
-            alert(t('form-not-found'));
-            setIsFormDisabled(false);
-            return;
-        }
-        emailjs
-            .sendForm(
-                process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID as string,
-                process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID as string,
-                form.current,
-                process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY as string,
-            )
-            .then(
-                () => {
-                    alert(t('email-sent'));
-                    form.current?.reset();
-                    setIsFormDisabled(false);
-                },
-                (error) => {
-                    console.error(error);
-                    alert(t('email-error'));
-                    setIsFormDisabled(false);
-                },
-            );
+    const isFormValid = () => {
+        return formData?.from_name && formData?.from_email && formData?.message;
     };
+
+    const sendEmail = useCallback(
+        async (e: FormEvent<HTMLFormElement>) => {
+            setIsFormDisabled(true);
+            e.preventDefault();
+
+            if (!isFormValid()) {
+                alert(t('invalid-form'));
+                setIsFormDisabled(false);
+                return;
+            }
+
+            if (!executeRecaptcha) {
+                alert(t('recaptcha-not-loaded'));
+                setIsFormDisabled(false);
+                return;
+            }
+            setStatus('loading');
+
+            try {
+                const token = await executeRecaptcha('contact_form');
+
+                const res = await fetch('/api/contact', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({
+                        form: formData,
+                        recaptchaToken: token,
+                    }),
+                });
+
+                if (!res.ok) {
+                    throw new Error('Failed to send email');
+                }
+
+                alert(t('email-sent'));
+                setFormData({ from_name: '', company: '', from_email: '', subject: '', message: '' });
+                setStatus('success');
+                setIsFormDisabled(false);
+            } catch (error) {
+                console.error(error);
+                alert(t('email-error'));
+                setStatus('error');
+                setIsFormDisabled(false);
+            }
+        },
+        [executeRecaptcha, formData],
+    );
 
     return (
         <section id="contact" className="py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-r from-green-900/30 to-emerald-900/30">
@@ -44,7 +69,7 @@ export default function ContactForm() {
                 {t('title')} <span className="text-emerald-400">{t('title2')}</span>
             </h2>
 
-            <form ref={form} onSubmit={sendEmail} className="max-w-9/10 xl:max-w-3/4 mx-auto flex flex-col gap-6 text-white text-start">
+            <form onSubmit={sendEmail} className="max-w-9/10 xl:max-w-3/4 mx-auto flex flex-col gap-6 text-white text-start">
                 <div className="flex flex-col md:flex-row flex-1 gap-4">
                     <div className="flex flex-col flex-1 gap-1">
                         <label htmlFor="name">
@@ -56,6 +81,9 @@ export default function ContactForm() {
                             placeholder={t('name-placeholder')}
                             className="border-none rounded-lg w-full h-8 bg-white/90 px-1 text-black"
                             name="from_name"
+                            disabled={status === 'loading'}
+                            value={formData?.from_name}
+                            onChange={(e) => setFormData({ ...formData, from_name: e.target.value })}
                             required
                             aria-required="true"
                         />
@@ -68,6 +96,9 @@ export default function ContactForm() {
                             placeholder={t('company-placeholder')}
                             className="border-none rounded-lg w-full h-8 bg-white/90 px-1 text-black"
                             name="company"
+                            value={formData?.company}
+                            onChange={(e) => setFormData({ ...formData, company: e.target.value })}
+                            disabled={status === 'loading'}
                         />
                     </div>
                 </div>
@@ -81,6 +112,9 @@ export default function ContactForm() {
                         placeholder={t('email-placeholder')}
                         className="border-none rounded-lg w-full h-8 bg-white/90 px-1 text-black"
                         name="from_email"
+                        value={formData?.from_email}
+                        onChange={(e) => setFormData({ ...formData, from_email: e.target.value })}
+                        disabled={status === 'loading'}
                         required
                         aria-required="true"
                     />
@@ -93,6 +127,9 @@ export default function ContactForm() {
                         placeholder={t('subject-placeholder')}
                         className="border-none rounded-lg w-full h-8 bg-white/90 px-1 text-black"
                         name="subject"
+                        value={formData?.subject}
+                        onChange={(e) => setFormData({ ...formData, subject: e.target.value })}
+                        disabled={status === 'loading'}
                     />
                 </div>
                 <div className="flex flex-col flex-1 gap-1">
@@ -105,13 +142,16 @@ export default function ContactForm() {
                         rows={6}
                         className="border-none rounded-lg w-full bg-white/90 p-1 text-black"
                         name="message"
+                        value={formData?.message}
+                        onChange={(e) => setFormData({ ...formData, message: e.target.value })}
+                        disabled={status === 'loading'}
                         required
                         aria-required="true"
                     ></textarea>
                 </div>
                 <button
                     type="submit"
-                    disabled={isFormDisabled}
+                    disabled={isFormDisabled || status === 'loading'}
                     className="w-fit mx-auto cursor-pointer px-8 py-3 text-sm bg-gradient-to-r from-green-500 to-emerald-600 text-white rounded-full font-semibold hover:from-green-600 hover:to-emerald-700 transform hover:scale-102 transition-all duration-300"
                 >
                     {t('send')}
