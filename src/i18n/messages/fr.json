@@ -26,6 +26,24 @@
         "cta": "Consulter mon CV",
         "resume-link": "CV_SLYS_Clara.pdf"
     },
+    "contact": {
+        "title": "Me",
+        "title2": "Contacter",
+        "name": "Nom",
+        "name-placeholder": "Saisissez votre nom complet",
+        "company": "Entreprise",
+        "company-placeholder": "Saisissez le nom de votre entreprise",
+        "email": "Email",
+        "email-placeholder": "Saisissez votre adresse email",
+        "subject": "Objet",
+        "subject-placeholder": "Saisissez l'objet de votre message",
+        "message": "Message",
+        "message-placeholder": "Saisissez votre message",
+        "send": "Envoyer",
+        "form-not-found": "Formulaire non trouvé. Veuillez réessayer plus tard.",
+        "email-sent": "Email envoyé avec succès !",
+        "email-error": "Erreur lors de l'envoi de l'email. Veuillez réessayer plus tard."
+    },
     "footer": {
         "technologies": "Technologies",
         "about": "À propos",

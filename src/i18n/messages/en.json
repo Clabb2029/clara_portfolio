@@ -26,6 +26,24 @@
         "cta": "See my Resume",
         "resume-link": "EN_RESUME_SLYS_Clara.pdf"
     },
+    "contact": {
+        "title": "Contact",
+        "title2": "Me",
+        "name": "Name",
+        "name-placeholder": "Enter your full name",
+        "company": "Company",
+        "company-placeholder": "Enter your company name",
+        "email": "Email",
+        "email-placeholder": "Enter your email address",
+        "subject": "Subject",
+        "subject-placeholder": "Enter the subject of your message",
+        "message": "Message",
+        "message-placeholder": "Enter your message",
+        "send": "Send",
+        "form-not-found": "Form not found. Please try again later.",
+        "email-sent": "Email sent successfully!",
+        "email-error": "Error sending email. Please try again later."
+    },
     "footer": {
         "technologies": "Technologies",
         "about": "About",

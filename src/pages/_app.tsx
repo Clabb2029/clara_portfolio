@@ -7,7 +7,7 @@ export default function App({ Component, pageProps }: AppProps) {
     const messages = (pageProps.messages as Record<string, unknown>) ?? {};
 
     return (
-        <NextIntlClientProvider locale={locale} messages={messages}>
+        <NextIntlClientProvider locale={locale} messages={messages} timeZone="Europe/Paris" now={new Date()}>
             <Component {...pageProps} />
         </NextIntlClientProvider>
     );
