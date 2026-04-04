@@ -59,5 +59,77 @@
         "title": "Clara Slys - Développeuse Web FullStack",
         "description": "Développeuse web Fullstack spécialisée en JavaScript, Java, Angular et React. Découvrez mes projets et mon univers.",
         "job-title": "Développeuse web Fullstack"
+    },
+    "legal-mentions": {
+        "title": "Mentions légales",
+        "back": "Retour",
+        "introduction": "Conformément aux dispositions de la loi n° 2004-575 du 21 juin 2004 pour la confiance en l'économie numérique, il est précisé aux utilisateurs du site clara-slys.fr l'identité des différents intervenants dans le cadre de sa réalisation et de son suivi.",
+        "content": [
+            {
+                "subtitle": "Edition du site",
+                "description": "Le présent site, accessible à l'URL www.clara-slys.fr (le « Site »), est édité par :\nClara Slys, résidant 11 rue des Baudières 89550 Héry, de nationalité Française (France), né(e) le 02/11/1999"
+            },
+            {
+                "subtitle": "Hébergement",
+                "description": "Le Site est hébergé par la société OVH SAS, situé 2 rue Kellermann - BP 80157 - 59053 Roubaix Cedex 1, (contact téléphonique ou email : 1007)."
+            },
+            {
+                "subtitle": "Directeur de publication",
+                "description": "Le directeur de publication du Site est Clara Slys."
+            },
+            {
+                "subtitle": "Contact",
+                "description": "Par téléphone : +33646379458\nPar email : slys.clara1@gmail.com\nPar courrier : 11 rue des Baudières 89550 Héry"
+            },
+            {
+                "subtitle": "Données personnelles",
+                "description": "Le traitement de vos données à caractère personnel est régi par la Charte du respect de la vie privée, disponible depuis la section \"Charte de Protection des Données Personnelles\", conformément au Règlement Général sur la Protection des Données 2016/679 du 27 avril 2016 («RGPD»)."
+            }
+        ],
+        "generation-site": "Génération des mentions légales par Legalstart."
+    },
+    "privacy-policy": {
+        "title": "Politique de Confidentialité",
+        "back": "Retour",
+        "date": "Dernière mise à jour : 04/04/2026",
+        "content": [
+            {
+                "subtitle": "Responsable du traitement",
+                "description": "Le présent site portfolio est édité par Clara SLYS, agissant en tant que responsable du traitement des données personnelles au sens du Règlement Général sur la Protection des Données (RGPD – Règlement UE 2016/679).Pour toute question relative à la protection de vos données, vous pouvez me contacter à l'adresse suivante : slys.clara1@gmail.com"
+            },
+            {
+                "subtitle": "Données collectées",
+                "description": "Dans le cadre de l'utilisation du formulaire de contact présent sur ce site, les données suivantes sont collectées :\n  - Nom complet\n  - Nom de l'entreprise\n  - Adresse e-mail\n  - Objet du message\n  - Contenu du message\nAucune autre donnée personnelle n'est collectée via ce site."
+            },
+            {
+                "subtitle": "Finalité et base légale du traitement",
+                "description": "Les données collectées via le formulaire de contact sont utilisées exclusivement pour répondre à vos demandes et messages.\nLa base légale de ce traitement est l'intérêt légitime du responsable du traitement (article 6.1.f du RGPD), à savoir la gestion des demandes de contact entrant dans le cadre de son activité professionnelle."
+            },
+            {
+                "subtitle": "Durée de conservation",
+                "description": "Les données transmises via le formulaire de contact sont conservées uniquement le temps nécessaire au traitement de votre demande, et supprimées au plus tard 12 mois après la dernière interaction."
+            },
+            {
+                "subtitle": "Destinataires des données",
+                "description": "Vos données ne sont pas vendues, louées, ni cédées à des tiers à des fins commerciales.\nElles sont toutefois transmises aux prestataires techniques suivants, dans le strict cadre de la fourniture de leurs services :\n  - EmailJS : Le formulaire de contact utilise le service EmailJS (EmailJS.com) afin d'acheminer les messages vers la boîte e-mail du responsable du traitement.\n  - Politique de confidentialité d'EmailJS : [https://www.emailjs.com/legal/privacy-policy/](https://www.emailjs.com/legal/privacy-policy/). EmailJS agit en qualité de sous-traitant et traite vos données conformément à sa propre politique de confidentialité.\n  - Google reCAPTCHA v3 : Ce site utilise Google reCAPTCHA v3 (Google LLC) afin de protéger le formulaire de contact contre les soumissions automatisées (spam et bots). reCAPTCHA v3 collecte des informations sur les interactions des utilisateurs avec le site (mouvements de souris, durée de navigation, données du navigateur, adresse IP) à des fins d'analyse comportementale, sans présenter de défi visible à l'utilisateur. Ces données sont traitées par Google LLC, dont le siège est situé aux États-Unis. Ce transfert est encadré par les clauses contractuelles types approuvées par la Commission européenne.\n  - Politique de confidentialité de Google : [https://policies.google.com/privacy](https://policies.google.com/privacy)\n  - Conditions d'utilisation de reCAPTCHA : [https://policies.google.com/terms](https://policies.google.com/terms)"
+            },
+            {
+                "subtitle": "Cookies",
+                "description": "Ce site n'utilise pas de cookies de traçage ou d'analyse.\nLe seul mécanisme susceptible de déposer des données dans votre navigateur est Google reCAPTCHA v3, dans le cadre de son fonctionnement décrit à la section 5."
+            },
+            {
+                "subtitle": "Vos droits",
+                "description": "Conformément au RGPD, vous disposez des droits suivants concernant vos données personnelles :\n  - Droit d'accès : obtenir une copie des données vous concernant\n  - Droit de rectification : corriger des données inexactes ou incomplètes\n  - Droit à l'effacement : demander la suppression de vos données\n  - Droit à la limitation du traitement : restreindre l'utilisation de vos données\n  - Droit d'opposition : vous opposer au traitement de vos données\n  - Droit à la portabilité : recevoir vos données dans un format structuré\nPour exercer ces droits, vous pouvez adresser votre demande à : slys.clara1@gmail.com\nVous disposez également du droit d'introduire une réclamation auprès de l'autorité de contrôle compétente. En France, il s'agit de la Commission Nationale de l'Informatique et des Libertés (CNIL) : [https://www.cnil.fr](https://www.cnil.fr)"
+            },
+            {
+                "subtitle": "Sécurité des données",
+                "description": "Des mesures techniques et organisationnelles appropriées sont mises en œuvre afin de protéger vos données contre tout acces.com/terms](https://policies.google.com/terms)"
+            },
+            {
+                "subtitle": "Modifications de la présente politique",
+                "description": "Cette politique de confidentialité peut être mise à jour ponctuellement. La date de dernière mise à jour est indiquée en haut du document. Nous vous encourageons à la consulter régulièrement."
+            }
+        ],
+        "conformity": "Ce document a été rédigé conformément au Règlement (UE) 2016/679 du Parlement européen et du Conseil du 27 avril 2016 relatif à la protection des données personnelles (RGPD)."
     }
 }

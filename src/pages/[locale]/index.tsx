@@ -6,23 +6,9 @@ import LanguageSwitch from '@/components/LanguageSwitch';
 import ScrollIndicator from '@/components/ScrollIndicator';
 import SEO from '@/components/SEO';
 import Technologies from '@/components/Technologies';
-import type { Locale } from '@/i18n/locales';
-import { SUPPORTED_LOCALES } from '@/i18n/locales';
 import { Leaf, LeafyGreen } from 'lucide-react';
-import { GetStaticPaths, GetStaticProps } from 'next';
 import { useTranslations } from 'next-intl';
-
-export const getStaticPaths: GetStaticPaths = async () => {
-    return {
-        paths: SUPPORTED_LOCALES.map((locale) => ({ params: { locale } })),
-        fallback: false,
-    };
-};
-export const getStaticProps: GetStaticProps = async ({ params }) => {
-    const locale = (params?.locale as Locale) ?? 'fr';
-    const messages = (await import(`@/i18n/messages/${locale}.json`)).default;
-    return { props: { locale, messages } };
-};
+export { getStaticPaths, getStaticProps } from '@/i18n/staticProps';
 
 export default function Home() {
     const t = useTranslations('home');

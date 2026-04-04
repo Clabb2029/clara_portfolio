@@ -1,9 +1,10 @@
-import { useTranslations } from 'next-intl';
+import { useLocale, useTranslations } from 'next-intl';
 import Link from 'next/link';
 
 export default function Footer() {
     const currentYear = new Date().getFullYear();
     const t = useTranslations('footer');
+    const locale = useLocale();
 
     return (
         <footer id="footer" className="py-10 bg-gradient-to-r from-[#021109] to-[#00100b] text-white/50 text-start">
@@ -60,11 +61,11 @@ export default function Footer() {
                 {/* Availability + copyright */}
                 <div className="flex flex-col gap-y-2">
                     <div>
-                        <Link href="/legal-mentions" className="hover:text-white mr-2">
+                        <Link href={`/${locale}/legal-mentions`} className="hover:text-white mr-2">
                             {t('legal-mentions')}
                         </Link>
                         -
-                        <Link href="/privacy-policy" className="hover:text-white ml-2">
+                        <Link href={`/${locale}/privacy-policy`} className="hover:text-white ml-2">
                             {t('privacy-policy')}
                         </Link>
                     </div>
