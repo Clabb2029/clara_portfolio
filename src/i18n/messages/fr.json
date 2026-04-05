@@ -1,4 +1,9 @@
 {
+    "seo": {
+        "title": "Clara Slys - Développeuse Web FullStack",
+        "description": "Développeuse web Fullstack spécialisée en JavaScript, Java, Angular et React. Découvrez mes projets et mon univers.",
+        "job-title": "Développeuse web Fullstack"
+    },
     "home": {
         "subtitle": "Développeuse Web FullStack passionnée",
         "ctaProjects": "Découvrir mes projets",
@@ -55,12 +60,11 @@
         "available": "Développeuse web fullstack freelance — disponible pour de nouvelles missions.",
         "copyright": "Clara Slys. Réalisé avec Next.js."
     },
-    "seo": {
-        "title": "Clara Slys - Développeuse Web FullStack",
-        "description": "Développeuse web Fullstack spécialisée en JavaScript, Java, Angular et React. Découvrez mes projets et mon univers.",
-        "job-title": "Développeuse web Fullstack"
-    },
     "legal-mentions": {
+        "seo-title": "Clara Slys - Mentions légales",
+        "seo-description": "Mentions légales du site portfolio de Clara Slys, développeuse web Fullstack.",
+        "seo-keywords": "Mentions légales, édition du site, hébergement, directeur de publication, contact, données personnelles",
+        "seo-canonical": "https://www.clara-slys.fr/fr/legal-mentions",
         "title": "Mentions légales",
         "back": "Retour",
         "introduction": "Conformément aux dispositions de la loi n° 2004-575 du 21 juin 2004 pour la confiance en l'économie numérique, il est précisé aux utilisateurs du site clara-slys.fr l'identité des différents intervenants dans le cadre de sa réalisation et de son suivi.",
@@ -89,6 +93,10 @@
         "generation-site": "Génération des mentions légales par Legalstart."
     },
     "privacy-policy": {
+        "seo-title": "Clara Slys - Politique de Confidentialité",
+        "seo-description": "Politique de confidentialité du site portfolio de Clara Slys, développeuse web Fullstack.",
+        "seo-keywords": "Politique de confidentialité, responsable du traitement, données collectées, finalité et base légale du traitement, durée de conservation, destinataires des données, cookies, vos droits, sécurité des données, modifications de la présente politique",
+        "seo-canonical": "https://www.clara-slys.fr/fr/privacy-policy",
         "title": "Politique de Confidentialité",
         "back": "Retour",
         "date": "Dernière mise à jour : 04/04/2026",
@@ -131,5 +139,15 @@
             }
         ],
         "conformity": "Ce document a été rédigé conformément au Règlement (UE) 2016/679 du Parlement européen et du Conseil du 27 avril 2016 relatif à la protection des données personnelles (RGPD)."
+    },
+    "not-found": {
+        "seo-title": "Clara Slys - Page non trouvée",
+        "seo-description": "Page non trouvée (404) du site portfolio de Clara Slys, développeuse web Fullstack.",
+        "seo-keywords": "Page non trouvée (404), Clara Slys, développeuse web Fullstack.",
+        "seo-canonical": "https://www.clara-slys.fr/fr/404",
+        "job-title": "Développeuse web Fullstack",
+        "title": "Page non trouvée",
+        "back": "Retour",
+        "description": "La page que vous cherchez n'existe pas. Vous serez redirigé vers la page d'accueil dans quelques secondes"
     }
 }

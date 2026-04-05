@@ -80,7 +80,7 @@ export default function ContactForm() {
                             type="text"
                             id="name"
                             placeholder={t('name-placeholder')}
-                            className="border-none rounded-lg w-full h-10 bg-white/90 px-1 text-black"
+                            className="border-none rounded-lg w-full h-10 bg-white/90 px-2 text-black"
                             name="from_name"
                             disabled={status === 'loading'}
                             value={formData?.from_name}
@@ -95,7 +95,7 @@ export default function ContactForm() {
                             type="text"
                             id="company"
                             placeholder={t('company-placeholder')}
-                            className="border-none rounded-lg w-full h-10 bg-white/90 px-1 text-black"
+                            className="border-none rounded-lg w-full h-10 bg-white/90 px-2 text-black"
                             name="company"
                             value={formData?.company}
                             onChange={(e) => setFormData({ ...formData, company: e.target.value })}
@@ -111,7 +111,7 @@ export default function ContactForm() {
                         type="email"
                         id="email"
                         placeholder={t('email-placeholder')}
-                        className="border-none rounded-lg w-full h-10 bg-white/90 px-1 text-black"
+                        className="border-none rounded-lg w-full h-10 bg-white/90 px-2 text-black"
                         name="from_email"
                         value={formData?.from_email}
                         onChange={(e) => setFormData({ ...formData, from_email: e.target.value })}
@@ -126,7 +126,7 @@ export default function ContactForm() {
                         type="text"
                         id="subject"
                         placeholder={t('subject-placeholder')}
-                        className="border-none rounded-lg w-full h-10 bg-white/90 px-1 text-black"
+                        className="border-none rounded-lg w-full h-10 bg-white/90 px-2 text-black"
                         name="subject"
                         value={formData?.subject}
                         onChange={(e) => setFormData({ ...formData, subject: e.target.value })}
@@ -141,7 +141,7 @@ export default function ContactForm() {
                         id="message"
                         placeholder={t('message-placeholder')}
                         rows={6}
-                        className="border-none rounded-lg w-full bg-white/90 px-1 py-2 text-black"
+                        className="border-none rounded-lg w-full bg-white/90 px-2 py-2 text-black"
                         name="message"
                         value={formData?.message}
                         onChange={(e) => setFormData({ ...formData, message: e.target.value })}

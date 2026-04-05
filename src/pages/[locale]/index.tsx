@@ -1,5 +1,6 @@
 import About from '@/components/About';
 import ContactForm from '@/components/ContactForm';
+import Experiences from '@/components/Experiences';
 import Footer from '@/components/Footer';
 import JungleBackground from '@/components/JungleBackground';
 import LanguageSwitch from '@/components/LanguageSwitch';
@@ -8,6 +9,7 @@ import SEO from '@/components/SEO';
 import Technologies from '@/components/Technologies';
 import { Leaf, LeafyGreen } from 'lucide-react';
 import { useTranslations } from 'next-intl';
+import Link from 'next/link';
 export { getStaticPaths, getStaticProps } from '@/i18n/staticProps';
 
 export default function Home() {
@@ -36,12 +38,18 @@ export default function Home() {
                     </div>
 
                     <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12 max-w-9/10 xl:max-w-3/4 mx-auto">
-                        <button className="px-8 py-3 bg-gradient-to-r from-green-500 to-emerald-600 text-white rounded-full font-semibold hover:from-green-600 hover:to-emerald-700 transform hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-xl cursor-pointer">
+                        <Link
+                            href="#experiences"
+                            className="px-8 py-3 bg-gradient-to-r from-green-500 to-emerald-600 text-white rounded-full font-semibold hover:from-green-600 hover:to-emerald-700 transform hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-xl cursor-pointer"
+                        >
                             {t('ctaProjects')}
-                        </button>
-                        <button className="px-8 py-3 border-2 border-green-500 text-green-600 rounded-full font-semibold hover:bg-green-500 hover:text-white transform hover:scale-105 transition-all duration-300 cursor-pointer">
+                        </Link>
+                        <Link
+                            href="#contact"
+                            className="px-8 py-3 border-2 border-green-500 text-green-600 rounded-full font-semibold hover:bg-green-500 hover:text-white transform hover:scale-105 transition-all duration-300 cursor-pointer"
+                        >
                             {t('ctaContact')}
-                        </button>
+                        </Link>
                     </div>
                     <ScrollIndicator />
                 </div>
@@ -49,6 +57,7 @@ export default function Home() {
                 <div className="relative bg-black/40 backdrop-blur-sm">
                     <Technologies />
                     <About />
+                    <Experiences />
                     <ContactForm />
                     <Footer />
                 </div>
