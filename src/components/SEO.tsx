@@ -27,7 +27,7 @@ export default function SEO({
                 content={`Clara Slys, Développeuse Web, FullStack Developer, Portfolio, Contact, Projets, Projects, A propos, About, Technologies, CV, Resume ${keywords || ''}`}
             />
             <meta name="author" content="Clara Slys" />
-            <link rel="canonical" href={canonical || 'https://www.clara-slys.fr'} />
+            <link rel="canonical" href={canonical || 'www.clara-slys.fr'} />
             <link rel="icon" href="/icons/favicon.ico" />
             <link rel="icon" type="image/png" sizes="32x32" href="/icons/favicon-32x32.png" />
             <link rel="icon" type="image/png" sizes="16x16" href="/icons/favicon-16x16.png" />
@@ -39,14 +39,14 @@ export default function SEO({
 
             {/* Open Graph */}
             <meta property="og:type" content="website" />
-            <meta property="og:url" content="https://www.clara-slys.fr/" />
-            <meta property="og:image" content="https://www.clara-slys.fr/icons/preview.png" />
+            <meta property="og:url" content="www.clara-slys.fr/" />
+            <meta property="og:image" content="www.clara-slys.fr/icons/preview.png" />
 
             {/* Twitter Card */}
             <meta name="twitter:card" content="summary_large_image" />
             <meta name="twitter:title" content={t('title')} />
             <meta name="twitter:description" content={t('description')} />
-            <meta name="twitter:image" content="https://www.clara-slys.fr/icons/preview.png" />
+            <meta name="twitter:image" content="www.clara-slys.fr/icons/preview.png" />
 
             {/* Schema.org */}
             <script
@@ -59,26 +59,26 @@ export default function SEO({
                                 '@type': 'Person',
                                 name: 'Clara Slys',
                                 jobTitle: t('job-title'),
-                                url: 'https://www.clara-slys.fr',
-                                image: 'https://www.clara-slys.fr/icons/preview.png',
+                                url: 'www.clara-slys.fr',
+                                image: 'www.clara-slys.fr/icons/preview.png',
                                 sameAs: ['https://github.com/Clabb2029/', 'https://www.linkedin.com/in/clara-slys/'],
                                 description: t('description'),
                             },
                             {
                                 '@type': 'WebSite',
                                 name: t('title'),
-                                url: 'https://www.clara-slys.fr',
+                                url: 'www.clara-slys.fr',
                                 potentialAction: {
                                     '@type': 'SearchAction',
-                                    target: 'https://www.clara-slys.fr/?s={search_term_string}',
+                                    target: 'www.clara-slys.fr/?s={search_term_string}',
                                     'query-input': 'required name=search_term_string',
                                 },
                             },
                             {
                                 '@type': 'Organization',
                                 name: 'Clara Slys',
-                                url: 'https://www.clara-slys.fr',
-                                logo: 'https://www.clara-slys.fr/icons/favicon-512x512.png',
+                                url: 'www.clara-slys.fr',
+                                logo: 'www.clara-slys.fr/icons/favicon-512x512.png',
                                 founder: {
                                     '@type': 'Person',
                                     name: 'Clara Slys',

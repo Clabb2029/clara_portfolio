@@ -32,12 +32,12 @@ export default function SEO404({
             <meta property="og:title" content={title} />
             <meta property="og:description" content={description} />
             <meta property="og:type" content="website" />
-            <meta property="og:url" content="https://www.clara-slys.fr/" />
-            <meta property="og:image" content="https://www.clara-slys.fr/icons/preview.png" />
+            <meta property="og:url" content="www.clara-slys.fr/" />
+            <meta property="og:image" content="www.clara-slys.fr/icons/preview.png" />
             <meta name="twitter:card" content="summary_large_image" />
             <meta name="twitter:title" content={title} />
             <meta name="twitter:description" content={description} />
-            <meta name="twitter:image" content="https://www.clara-slys.fr/icons/preview.png" />
+            <meta name="twitter:image" content="www.clara-slys.fr/icons/preview.png" />
             <script
                 type="application/ld+json"
                 dangerouslySetInnerHTML={{
@@ -48,26 +48,26 @@ export default function SEO404({
                                 '@type': 'Person',
                                 name: 'Clara Slys',
                                 jobTitle: { jobTitle },
-                                url: 'https://www.clara-slys.fr',
-                                image: 'https://www.clara-slys.fr/icons/preview.png',
+                                url: 'www.clara-slys.fr',
+                                image: 'www.clara-slys.fr/icons/preview.png',
                                 sameAs: ['https://github.com/Clabb2029/', 'https://www.linkedin.com/in/clara-slys/'],
                                 description: { description },
                             },
                             {
                                 '@type': 'WebSite',
                                 name: { title },
-                                url: 'https://www.clara-slys.fr',
+                                url: 'www.clara-slys.fr',
                                 potentialAction: {
                                     '@type': 'SearchAction',
-                                    target: 'https://www.clara-slys.fr/?s={search_term_string}',
+                                    target: 'www.clara-slys.fr/?s={search_term_string}',
                                     'query-input': 'required name=search_term_string',
                                 },
                             },
                             {
                                 '@type': 'Organization',
                                 name: 'Clara Slys',
-                                url: 'https://www.clara-slys.fr',
-                                logo: 'https://www.clara-slys.fr/icons/favicon-512x512.png',
+                                url: 'www.clara-slys.fr',
+                                logo: 'www.clara-slys.fr/icons/favicon-512x512.png',
                                 founder: {
                                     '@type': 'Person',
                                     name: 'Clara Slys',
