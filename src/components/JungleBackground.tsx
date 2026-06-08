@@ -44,7 +44,7 @@ export default function JungleBackground() {
     };
 
     return (
-        <div className="absolute inset-0 overflow-hidden max-h-screen">
+        <div className="absolute inset-0 overflow-hidden max-h-screen opacity-70">
             {/* Jungle left */}
             <div
                 className="transition-all duration-1200 ease-out absolute top-0 -left-20 w-full h-full"

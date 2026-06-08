@@ -8,7 +8,7 @@ export default function LegalMentions() {
 
     return (
         <>
-            <SEO title={t('title')} description={t('description')} keywords={t('keywords')} canonical={t('canonical')} />
+            <SEO title={t('seo-title')} description={t('seo-description')} keywords={t('seo-keywords')} canonical={t('seo-canonical')} />
             <div className="bg-black/40 backdrop-blur-sm">
                 <GenericLegal type="legal-mentions" />
             </div>

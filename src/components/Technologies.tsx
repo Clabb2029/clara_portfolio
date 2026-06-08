@@ -59,24 +59,29 @@ export default function Technologies() {
     ];
 
     return (
-        <section id="technologies" className="py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-r from-green-900/30 to-emerald-900/30">
-            <div className="max-w-9/10 xl:max-w-3/4 mx-auto text-center">
-                <h2 className="text-3xl sm:text-4xl font-bold text-white mb-8">
-                    {t('title')} <span className="text-emerald-400">{t('title2')}</span>
-                </h2>
+        <section id="technologies" className="py-24 px-6 bg-emerald-deep/10 border-y border-emerald-deep/30">
+            <div className="max-w-6xl mx-auto">
+                <div className="flex flex-col md:flex-row gap-12">
+                    <div className="md:w-1/3">
+                        <h2 className="font-display text-4xl md:text-5xl mb-6 leading-tight">
+                            {t('title')} <span className="italic text-emerald-bright">{t('title2')}</span>
+                        </h2>
+                        <p className="text-paper/60 text-sm leading-relaxed max-w-xs">{t('description')}</p>
+                    </div>
 
-                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-                    {[
-                        { technologies: langages, title: t('languages') },
-                        { technologies: frameworks, title: t('frameworks') },
-                        { technologies: libraries, title: t('libraries') },
-                        { technologies: databases, title: t('databases') },
-                        { technologies: tests, title: t('tests') },
-                        { technologies: tools, title: t('tools') },
-                    ].map(({ technologies, title }) => {
-                        const uniqueTechnologies = Array.from(new Map(technologies.map((tech) => [tech.name, tech])).values());
-                        return <TechnologiesCard key={title} technologies={uniqueTechnologies} title={title} />;
-                    })}
+                    <div className="md:w-2/3 grid grid-cols-1 sm:grid-cols-2 gap-x-10 gap-y-10">
+                        {[
+                            { technologies: langages, title: t('languages') },
+                            { technologies: frameworks, title: t('frameworks') },
+                            { technologies: libraries, title: t('libraries') },
+                            { technologies: databases, title: t('databases') },
+                            { technologies: tests, title: t('tests') },
+                            { technologies: tools, title: t('tools') },
+                        ].map(({ technologies, title }) => {
+                            const uniqueTechnologies = Array.from(new Map(technologies.map((tech) => [tech.name, tech])).values());
+                            return <TechnologiesCard key={title} technologies={uniqueTechnologies} title={title} />;
+                        })}
+                    </div>
                 </div>
             </div>
         </section>

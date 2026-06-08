@@ -3,7 +3,7 @@ import ContactForm from '@/components/ContactForm';
 import Experiences from '@/components/Experiences';
 import Footer from '@/components/Footer';
 import JungleBackground from '@/components/JungleBackground';
-import LanguageSwitch from '@/components/LanguageSwitch';
+import Nav from '@/components/Nav';
 import ScrollIndicator from '@/components/ScrollIndicator';
 import SEO from '@/components/SEO';
 import Technologies from '@/components/Technologies';
@@ -17,19 +17,18 @@ export default function Home() {
     return (
         <>
             <SEO />
-            <div className="min-h-screen bg-gradient-to-br from-gray-900 via-green-900 to-emerald-900 relative text-center">
+            <div className="bg-forest text-paper font-sans selection:bg-emerald-bright selection:text-forest">
                 <JungleBackground />
-                <LanguageSwitch />
-
+                <Nav />
                 <div className="relative flex flex-col justify-center min-h-screen px-4 sm:px-6 lg:px-8">
-                    <div className="relative mx-auto mb-20 px-8 sm:px-16">
+                    <div className="relative mx-auto mb-10 px-8 sm:px-16 text-center">
                         <div className="absolute -top-10 right-2 size-6 text-white">
                             <Leaf />
                         </div>
-                        <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white mb-8">
-                            Clara <span className="text-emerald-400">SLYS</span>
+                        <h1 className="font-display text-7xl md:text-9xl mb-4 tracking-tighter leading-none">
+                            Clara <span className="text-emerald-400 italic">SLYS</span>
                         </h1>
-                        <p className="text-md sm:text-xl md:text-2xl text-white/75 mb-8 max-w-2xl mx-auto leading-relaxed">
+                        <p className="font-mono text-sm md:text-base uppercase tracking-[0.3em] text-emerald-bright/80 mb-10">
                             {t('subtitle')}
                         </p>
                         <div className="absolute -bottom-2 left-0 size-6 rotate-180 text-emerald-400">
@@ -37,16 +36,16 @@ export default function Home() {
                         </div>
                     </div>
 
-                    <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12 max-w-9/10 xl:max-w-3/4 mx-auto">
+                    <div className="flex gap-4 justify-center flex-wrap">
                         <Link
                             href="#experiences"
-                            className="px-8 py-3 bg-gradient-to-r from-green-500 to-emerald-600 text-white rounded-full font-semibold hover:from-green-600 hover:to-emerald-700 transform hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-xl cursor-pointer"
+                            className="px-8 py-3 bg-emerald-bright text-forest font-semibold rounded-full hover:bg-paper transition-all transform hover:scale-105"
                         >
-                            {t('ctaProjects')}
+                            {t('ctaPortfolio')}
                         </Link>
                         <Link
                             href="#contact"
-                            className="px-8 py-3 border-2 border-green-500 text-green-600 rounded-full font-semibold hover:bg-green-500 hover:text-white transform hover:scale-105 transition-all duration-300 cursor-pointer"
+                            className="px-8 py-3 border border-emerald-bright/30 rounded-full hover:bg-emerald-deep transition-all"
                         >
                             {t('ctaContact')}
                         </Link>
@@ -54,13 +53,11 @@ export default function Home() {
                     <ScrollIndicator />
                 </div>
 
-                <div className="relative bg-black/40 backdrop-blur-sm">
-                    <Technologies />
-                    <About />
-                    <Experiences />
-                    <ContactForm />
-                    <Footer />
-                </div>
+                <Technologies />
+                <About />
+                <Experiences />
+                <ContactForm />
+                <Footer />
             </div>
         </>
     );

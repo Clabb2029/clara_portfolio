@@ -4,14 +4,21 @@
         "description": "Développeuse web Fullstack spécialisée en JavaScript, Java, Angular et React. Découvrez mes projets et mon univers.",
         "job-title": "Développeuse web Fullstack"
     },
+    "nav": {
+        "mastery": "Maîtrise",
+        "behind": "Derrière l'écran",
+        "specimens": "Projets",
+        "contact": "Contact"
+    },
     "home": {
         "subtitle": "Développeuse Web FullStack passionnée",
-        "ctaProjects": "Découvrir mes projets",
-        "ctaContact": "Me contacter"
+        "ctaPortfolio": "Voir mon portfolio",
+        "ctaContact": "Contactez-moi"
     },
     "technologies": {
         "title": "Technologies",
         "title2": "Maîtrisées",
+        "description": "Les outils que j'utilise pour cultiver des écosystèmes robustes et scalables dans le monde numérique.",
         "languages": "Langages",
         "frameworks": "Frameworks",
         "libraries": "Librairies",
@@ -22,18 +29,373 @@
     "about": {
         "title": "Derrière",
         "title2": "l'Écran",
+        "subtitle": "Notes de terrain",
         "pin-alt": "Punaise",
         "plant-alt": "Plante enneigée",
+        "plant-description": "Les plantes de mon univers",
         "mochi-alt": "Mochi chiot",
-        "note1": "Salut, moi c'est Clara 👋 Je suis développeuse fullstack et ce qui me plaît, c'est de transformer des idées en projets concrets, utiles et bien pensés. J'aime travailler autant sur la partie technique que sur l'expérience utilisateur, parce que pour moi un bon projet, c'est un mélange d'efficacité et de simplicité !",
+        "mochi-description": "Mochi, le petit monstre",
+        "note1": "Salut, moi c'est Clara 👋 Je suis développeuse fullstack qui aime transformer des idées en projets simples, efficaces, mélangeant technologie et bonne expérience utilisateur.",
         "note2": "En dehors de l'écran, je suis une grande amoureuse des plantes ! Et depuis peu, un petit chiot partage mon quotidien, ce qui m'apprend la patience et la créativité autrement qu'avec du code !",
-        "note3": "Si tu veux en savoir un peu plus sur mon parcours, tu peux jeter un œil à mon CV. Et si tu as un projet web en tête ou simplement envie d'échanger, je serais ravie d'en discuter avec toi. Tu peux m'écrire directement via le formulaire de contact que tu retrouveras juste en dessous 👇",
+        "note3": "Curieux(se) de connaître mon parcours ? Regarde mon CV. Un projet web en tête ou simplement envie d'échanger ? N'hésite pas à me contacter ci-dessous 👇",
         "cta": "Consulter mon CV",
         "resume-link": "CV_SLYS_Clara.pdf"
     },
+    "experiences": {
+        "title": "Mes",
+        "title2": "Projets",
+        "experience-list": [
+            {
+                "short-title": "Jurni",
+                "long-title": "Jurni — Plateforme d'orientation professionnelle assistée par IA",
+                "company": "Jurni Careers",
+                "companyUrl": "https://www.getjurni.com/",
+                "experienceUrl": "https://app.getjurni.com/",
+                "startDate": "01/10/2025",
+                "endDate": "en cours",
+                "location": "A distance",
+                "short-description": "Jurni est une application web qui aide les utilisateurs à clarifier leur projet professionnel à partir d'une évaluation complète de leur profil (personnalité, motivations, besoins, compétences), puis à identifier des métiers réellement alignés avec ce profil.L'objectif est de transformer une réflexion souvent floue (“Quel métier me correspond ?”) en recommandations concrètes, personnalisées et actionnables.",
+                "technologies": [
+                    "Next.js",
+                    "TypeScript",
+                    "Tailwind CSS",
+                    "FastAPI",
+                    "MongoDB",
+                    "Redis",
+                    "LangGraph",
+                    "OpenAI",
+                    "Anthropic",
+                    "Docker",
+                    "Docker Compose",
+                    "Traefik",
+                    "Mixpanel",
+                    "Langfuse",
+                    "Resend",
+                    "Google APIs",
+                    "Stripe",
+                    "EmailJS",
+                    "Google reCAPTCHA",
+                    "Google Analytics",
+                    "Google Tag Manager",
+                    "Google Search Console",
+                    "Google My Business"
+                ],
+                "description": {
+                    "content-1": {
+                        "tab": "Problèmes",
+                        "title": "Problèmes que je résous avec ce projet",
+                        "content-list": {
+                            "list-item-1": "Rendre l'orientation professionnelle plus fiable et moins \"au feeling\".",
+                            "list-item-2": "Croiser plusieurs dimensions (psychologie, motivations, compétences, contraintes) dans une même expérience.",
+                            "list-item-3": "Réduire le temps entre \"je me questionne\" et \"j'ai des pistes réalistes\".",
+                            "list-item-4": "Proposer une expérience fluide, compréhensible et bilingue, même pour un public non technique."
+                        }
+                    },
+                    "content-2": {
+                        "tab": "Stack",
+                        "title": "Stack technique utilisé pour ce projet",
+                        "content-list": {
+                            "list-item-1": "Frontend : Next.js (React) + TypeScript + Tailwind CSS\nPour une interface rapide, moderne et maintenable.",
+                            "list-item-2": "Backend API : FastAPI (Python)\nPour exposer des endpoints robustes, bien structurés et documentés.",
+                            "list-item-3": "Base de données : MongoDB\nAdaptée à des données utilisateurs et résultats d'évaluations évolutifs.",
+                            "list-item-4": "Cache : Redis\nPour accélérer les réponses et soulager la base principale.",
+                            "list-item-5": "IA / orchestration : LangGraph + providers LLM (OpenAI, Anthropic)\nPour gérer des parcours conversationnels multi-étapes et des analyses personnalisées.",
+                            "list-item-6": "Documentation API : Swagger/OpenAPI\nPour faciliter les tests, l'intégration et la collaboration produit/tech.",
+                            "list-item-7": "Paiement : Stripe\nGestion des achats de crédits de manière sécurisée.",
+                            "list-item-8": "Infra / déploiement : Docker + Docker Compose + Traefik\nPour des environnements cohérents (dev/prod), scalables et plus simples à opérer.",
+                            "list-item-9": "Observabilité & produit : Mixpanel + Langfuse\nPour suivre l'usage, la qualité des parcours IA et améliorer en continu.",
+                            "list-item-10": "Services complémentaires : Resend (emails), Google APIs (intégrations), etc"
+                        }
+                    },
+                    "content-3": {
+                        "tab": "Choix techniques",
+                        "title": "Choix techniques et pourquoi ils sont pertinents",
+                        "content": "J'ai choisi cette architecture pour équilibrer vitesse de livraison, qualité produit et capacité d'évolution :",
+                        "content-list": {
+                            "list-item-1": "Next.js + TypeScript sécurisent le front et accélèrent le développement d'interfaces complexes.",
+                            "list-item-2": "FastAPI permet une API performante, claire, et naturellement compatible avec une doc OpenAPI.",
+                            "list-item-3": "MongoDB convient bien à un produit qui manipule des structures de données riches et évolutives.",
+                            "list-item-4": "Redis améliore la réactivité perçue côté utilisateur.",
+                            "list-item-5": "LangGraph structure proprement les workflows IA (conversation, extraction, scoring), ce qui rend le comportement plus fiable qu'un simple \"prompt unique\".",
+                            "list-item-6": "Docker standardise l'exécution sur tous les environnements et réduit les écarts entre local et production.",
+                            "list-item-7": "Mixpanel et Langfuse offrent des outils d'observabilité robustes et adaptés à l'échelle d'un produit SaaS."
+                        }
+                    },
+                    "content-4": {
+                        "tab": "Impact",
+                        "title": "Impact généré",
+                        "content-list": {
+                            "list-item-1": "Expérience utilisateur plus personnalisée et plus utile pour la prise de décision carrière.",
+                            "list-item-2": "Recommandations de métiers plus cohérentes grâce au croisement de signaux multiples.",
+                            "list-item-3": "Meilleure conversion produit via un parcours clair, un modèle de crédits et des analyses à forte valeur.",
+                            "list-item-4": "Base technique solide pour itérer rapidement, ajouter de nouvelles évaluations et faire évoluer le produit."
+                        }
+                    }
+                }
+            },
+            {
+                "short-title": "Simulphone / Simulforge",
+                "long-title": "Simulforge / Simulphone — Suite de formation pour centres d'appels",
+                "company": "AnthroPi",
+                "companyUrl": "https://anthropi.net/",
+                "experienceUrl": "https://simulphone.com/",
+                "startDate": "17/04/2023",
+                "endDate": "16/04/2025",
+                "location": "Dijon, France",
+                "short-description": "J'ai contribué à la SimulSuite, un écosystème composé de deux applications web complémentaires et d'une bibliothèque partagée, vendues en licence B2B à des centres de formation et des organisations clientes.\nMon rôle : correction de bugs, développement de nouvelles fonctionnalités (frontend et backend), et maintenance continue des deux applications et de la librairie commune.\nNote : les applications sont sous licence et à accès restreint ; je ne peux pas inclure de captures d'écran.",
+                "technologies": [
+                    "Angular",
+                    "TypeScript",
+                    "Bootstrap",
+                    "Angular Material",
+                    "ng-bootstrap",
+                    "RxJS",
+                    "ngx-translate",
+                    "PeerJS",
+                    "Socket.io",
+                    "Chart.js",
+                    "Quill",
+                    "MediaRecorder API"
+                ],
+                "description": {
+                    "content-1": {
+                        "tab": "Vue d'ensemble",
+                        "title": "Vue d'ensemble de la suite de formation",
+                        "content-list": {
+                            "list-item-1": "SimulPhone :\nPublic : Stagiaires et formateurs (centres d'appels)\nRôle : Simulateur d'appels pour s'entraîner à gérer le stress et les situations difficiles au téléphone",
+                            "list-item-2": "SimulForge :\nPublic : Équipes internes (back-office)\nRôle : Administration des clients, des sessions de formation, et création des contenus pédagogiques utilisés dans SimulPhone",
+                            "list-item-3": "SimulLibrary :\nPublic : Développeurs\nRôle : Code mutualisé (services, modèles, composants) pour éviter la duplication entre les deux applications (SimulPhone et SimulForge)"
+                        }
+                    },
+                    "content-2": {
+                        "tab": "Problèmes",
+                        "title": "Problèmes résolus avec ces projets",
+                        "content-list": {
+                            "list-item-1": "Pour les centres d'appels : former les agents dans un environnement sécurisé, sans impact sur de vrais clients, avec des scénarios réalistes (appels stressants, états émotionnels, ambiances sonores).",
+                            "list-item-2": "Pour les formateurs : piloter des sessions en direct, suivre les stagiaires, écouter/rejouer les enregistrements, et analyser les performances.",
+                            "list-item-3": "Pour l'entreprise éditrice : gérer un parc de clients sous licence, configurer les formations, et maintenir un catalogue de simulations (scènes, scripts, personas, puzzles, etc.) depuis un back-office centralisé."
+                        }
+                    },
+                    "content-3": {
+                        "tab": "Stack",
+                        "title": "Stack technique utilisé pour ce projet",
+                        "content-list": {
+                            "list-item-1": "Angular 15 + TypeScript",
+                            "list-item-2": "Bootstrap 5 + Angular Material + ng-bootstrap",
+                            "list-item-3": "RxJS pour la gestion réactive des flux",
+                            "list-item-4": "ngx-translate — interface multilingue (français, anglais)",
+                            "list-item-5": "PeerJS — communication audio peer-to-peer pour les simulations d'appel",
+                            "list-item-6": "Socket.io — temps réel (salle audio formateur, suivi des stagiaires connectés)",
+                            "list-item-7": "Chart.js — tableaux de bord et statistiques",
+                            "list-item-8": "Quill — édition de contenus riches (scripts, descriptions)",
+                            "list-item-9": "MediaRecorder API — enregistrement des appels simulés",
+                            "list-item-10": "Node.js + Express",
+                            "list-item-11": "Sequelize — ORM sur MariaDB (données métier : clients, utilisateurs, sessions, scènes, licences, droits…)",
+                            "list-item-12": "MongoDB — données complémentaires (certaines collections documentaires)",
+                            "list-item-13": "Socket.io — orchestration temps réel des simulations (connexions formateur/stagiaire, état des appels)",
+                            "list-item-14": "JWT + bcrypt — authentification et sécurisation des accès",
+                            "list-item-15": "Nodemailer — notifications par e-mail",
+                            "list-item-16": "Puppeteer — génération de documents PDF",
+                            "list-item-17": "Services HTTP communs (utilisateurs, sessions, scènes, appelants, droits, traductions…)",
+                            "list-item-18": "Modèles et interfaces TypeScript partagés",
+                            "list-item-19": "Composants UI réutilisables, intercepteurs (token JWT, langue)",
+                            "list-item-20": "Packages internes : validateur de mot de passe, multiselect",
+                            "list-item-21": "Docker — images par application et par environnement (prod, staging, demo, local)",
+                            "list-item-22": "GitLab CI/CD — lint, analyse de sécurité (SAST), build frontend, génération d'images Docker",
+                            "list-item-23": "Hotjar — suivi d'usage produit",
+                            "list-item-24": "Déploiements multi-environnements (simulphone.anthropi.fr, simulforge.anthropi.fr, staging, demo)"
+                        }
+                    },
+                    "content-4": {
+                        "tab": "Fonctionnalités clés",
+                        "title": "Fonctionnalités clés de la suite de formation",
+                        "content-list": {
+                            "list-item-1": "Simulation d'appels avec flux audio temps réel, sonneries, ambiances et enregistrement",
+                            "list-item-2": "Parcours stagiaire / formateur (tableaux de bord, gestion des participants)",
+                            "list-item-3": "Relecture des appels enregistrés (playback)",
+                            "list-item-4": "Ateliers complémentaires (escape game, puzzles, gammes pédagogiques)",
+                            "list-item-5": "Gestion des clients et de l'organisation (utilisateurs, droits granulaires)",
+                            "list-item-6": "Gestion des sessions et formations",
+                            "list-item-7": "Création et édition des simulations (scènes, phases, personas, scripts, états émotionnels, bandes sonores)",
+                            "list-item-8": "Modules pédagogie, ressources, localisation, statistiques, administration"
+                        }
+                    },
+                    "content-5": {
+                        "tab": "Choix techniques",
+                        "title": "Choix techniques et leur utilité",
+                        "content-list": {
+                            "list-item-1": "Monorepo Angular (2 apps + lib): Un seul dépôt frontend, builds coordonnés, code partagé via la librairie",
+                            "list-item-2": "Simulsuite Library : Évite de dupliquer services et modèles ; une correction profite aux deux apps",
+                            "list-item-3": "MariaDB + Sequelize : Données relationnelles structurées (clients, sessions, droits) avec migrations et requêtes typées",
+                            "list-item-4": "MongoDB en complément : Flexibilité pour certains contenus documentaires",
+                            "list-item-5": "Socket.io + PeerJS : Temps réel pour le pilotage formateur ; audio direct entre stagiaire et scénario simulé",
+                            "list-item-6": "Droits granulaires : Chaque rôle (formateur, admin, éditeur…) n'accède qu'aux fonctionnalités autorisées",
+                            "list-item-7": "Docker + GitLab CI : Déploiements reproductibles et pipelines automatisés par environnement"
+                        }
+                    }
+                }
+            },
+            {
+                "short-title": "Marchés publics",
+                "long-title": "Marchés publics — donne accès à 100% des marchés publics",
+                "company": "PublicTrade",
+                "companyUrl": "https://marches-publics.com/",
+                "experienceUrl": "https://marches-publics.com/",
+                "startDate": "05/12/2025",
+                "endDate": "17/12/2025",
+                "location": "A distance",
+                "short-description": "Marchés-publics.com est une plateforme qui centralise l'ensemble des appels d'offres publics publiés en France, y compris ceux non référencés sur les canaux officiels, et permet aux entreprises de configurer des alertes ciblées, d'accéder instantanément aux dossiers techniques (DCE) et de suivre l'historique des attributions. Ma mission sur ce projet : repenser entièrement l'interface utilisateur pour la moderniser, la rendre plus lisible et améliorer l'expérience globale des utilisateurs professionnels. La refonte est actuellement en cours et n'est pas encore déployée en production.",
+                "technologies": [
+                    "Angular",
+                    "TypeScript",
+                    "Tailwind CSS",
+                    "Lovable"
+                ],
+                "description": {
+                    "content-1": {
+                        "tab": "Problèmes",
+                        "title": "Problèmes résolus avec ce projet",
+                        "content-list": {
+                            "list-item-1": "Donner à une interface vieillissante une expérience moderne, fluide et cohérente, à la hauteur des standards actuels du web.",
+                            "list-item-2": "Améliorer la lisibilité et la hiérarchie visuelle pour que des utilisateurs non-techniques (commerciaux, consultants, architectes…) naviguent sans friction.",
+                            "list-item-3": "Assainir une base de code alourdie au fil du temps : suppression des redondances, nettoyage du code inutilisé, réduction du poids global de l'application.",
+                            "list-item-4": "Poser une base frontend solide, structurée et maintenable, pour permettre à l'équipe produit d'itérer plus facilement à l'avenir.",
+                            "list-item-5": "Rendre l'interface adaptée à tous les écrans, notamment pour les utilisateurs en mobilité."
+                        }
+                    },
+                    "content-2": {
+                        "tab": "Stack",
+                        "title": "Stack technique utilisé pour ce projet",
+                        "content-list": {
+                            "list-item-1": "Frontend : Angular + TypeScript — Pour une architecture robuste, modulaire et adaptée aux applications métier complexes à maintenir sur le long terme.",
+                            "list-item-2": "Maquette : Lovable, outil de conception no-code/IA utilisé pour poser les bases visuelles de la nouvelle interface avant intégration."
+                        }
+                    },
+                    "content-3": {
+                        "tab": "Choix techniques",
+                        "title": "Choix techniques et leur pertinence",
+                        "content-list": {
+                            "list-item-1": "Partir d'une maquette réalisée sur Lovable a permis de valider rapidement l'orientation visuelle et les choix d'interface avant d'entrer dans le code, un gain de temps concret et une façon de limiter les allers-retours entre design et développement.",
+                            "list-item-2": "Pour l'intégration, Angular s'est imposé comme le choix naturel : c'est un framework dit \"opinioné\", qui impose une structure claire et des conventions strictes. C'est un avantage réel dans un contexte de refonte, car cela garantit un code lisible et cohérent, même lorsque plusieurs développeurs interviennent sur le projet. Associé à TypeScript, un langage qui détecte les erreurs avant même l'exécution, il permet de livrer une interface fiable et facile à faire évoluer, sans accumuler de dette technique.\nCe choix est également cohérent avec l'existant : reprendre la même technologie que la version précédente a permis de migrer progressivement, sans repartir de zéro ni fragiliser ce qui fonctionne déjà."
+                        }
+                    },
+                    "content-4": {
+                        "tab": "Impact généré",
+                        "title": "Impact généré par cette refonte",
+                        "content-list": {
+                            "list-item-1": "Interface modernisée, plus claire et plus agréable, qui reflète mieux la qualité du service proposé.",
+                            "list-item-2": "Application plus légère et plus performante grâce au nettoyage en profondeur du code existant (suppression des redondances, retrait du code mort).",
+                            "list-item-3": "Expérience utilisateur repensée pour réduire les frictions et accélérer les parcours clés (recherche, accès aux DCE, gestion des alertes).",
+                            "list-item-4": "Base de code assainie et maintenable, qui facilitera les évolutions futures du produit.",
+                            "list-item-5": "Meilleure adaptabilité aux différents appareils pour des professionnels souvent en déplacement."
+                        }
+                    }
+                }
+            },
+            {
+                "short-title": "Site vitrine",
+                "long-title": "Site vitrine — Atelier Jean-Claude Larrivé (tapissier décorateur)",
+                "company": "Jean-Claude Larrivé",
+                "companyUrl": "https://www.pagesjaunes.fr/pros/08567045",
+                "experienceUrl": "https://www.atelier-larrive.fr/",
+                "startDate": "08/05/2025",
+                "endDate": "27/06/2025",
+                "location": "A distance",
+                "short-description": "Site web professionnel pour Jean-Claude Larrivé, artisan tapissier-décorateur à Auxerre (Yonne). Le site présente son savoir-faire, ses réalisations et ses services (restauration de sièges, décoration intérieure, cours d'initiation), avec un objectif clair : être visible localement et faciliter la prise de contact (devis, conseils).",
+                "technologies": [
+                    "Next.js",
+                    "React",
+                    "TypeScript",
+                    "Tailwind CSS",
+                    "DaisyUI",
+                    "Google Fonts",
+                    "EmailJS",
+                    "Leaflet",
+                    "OpenStreetMap",
+                    "API YouTube",
+                    "Lucide React",
+                    "next-sitemap",
+                    "ESLint",
+                    "Prettier",
+                    "Vercel"
+                ],
+                "description": {
+                    "content-1": {
+                        "tab": "Problèmes",
+                        "title": "Problèmes résolus avec ce projet",
+                        "content-list": {
+                            "list-item-1": "Visibilité locale : un artisan sans présence web perd des demandes de clients qui cherchent un tapissier à Auxerre ou dans les environs (Avallon, marchés, etc.).",
+                            "list-item-2": "Crédibilité : mettre en valeur plus de 35 ans d'expérience, l'atelier et des réalisations concrètes (fauteuils, canapés, rideaux, stores).",
+                            "list-item-3": "Conversion : rendre simple la prise de contact (formulaire, téléphone, e-mail, localisation).",
+                            "list-item-4": "Pédagogie : informer sur les cours d'initiation à la tapisserie proposés à l'atelier."
+                        }
+                    },
+                    "content-2": {
+                        "tab": "Stack",
+                        "title": "Stack technique utilisé pour ce projet",
+                        "content-list": {
+                            "list-item-1": "Next.js 15 (Pages Router) + React 19 + TypeScript",
+                            "list-item-2": "Tailwind CSS 4 + DaisyUI (thème sur mesure aux couleurs de l'atelier)",
+                            "list-item-3": "Polices Google (Parisienne, Zeyada) pour une identité visuelle artisanale",
+                            "list-item-4": "EmailJS : formulaire de contact sans backend dédié (envoi d'e-mails côté client)",
+                            "list-item-5": "Leaflet + react-leaflet + OpenStreetMap : carte interactive de l'atelier (chargement dynamique, sans SSR)",
+                            "list-item-6": "API YouTube : extrait vidéo intégré sur la page Réalisations (stores, installation)",
+                            "list-item-7": "Lucide React : icônes (navigation, contact, carte)",
+                            "list-item-8": "Composant SEO dédié par page (title, description, keywords, canonical)",
+                            "list-item-9": "Données structurées Schema.org (LocalBusiness, Person, Organization) pour le référencement local",
+                            "list-item-10": "next-sitemap — génération automatique du sitemap et de robots.txt au build",
+                            "list-item-11": "Pages mentions légales et CGU",
+                            "list-item-12": "ESLint + Prettier",
+                            "list-item-13": "Hébergement type Vercel (adapté à Next.js, déploiement simple)",
+                            "list-item-14": "Site statique / peu de logique serveur : coût d'hébergement faible et maintenance légère"
+                        }
+                    },
+                    "content-3": {
+                        "tab": "Contenu",
+                        "title": "Contenu et parcours utilisateur",
+                        "content-list": {
+                            "list-item-1": "Accueil : Présentation, carte de l'atelier, appel à l'action contact",
+                            "list-item-2": "Réalisations : Galeries photos (sièges, autres créations), mise en page responsive, vidéo métier",
+                            "list-item-3": "Matériaux : Tissus, savoir-faire traditionnel, pictogrammes éco-responsables (Green Line, rPET, etc.)",
+                            "list-item-4": "Cours : Offre de formation à l’atelier (tarif, modalités)",
+                            "list-item-5": "Contact : Formulaire, coordonnées, lien Google Maps",
+                            "list-item-6": "Navigation responsive (menu burger mobile), mise en page soignée (galeries en « polaroid » positionnés différemment selon la taille d'écran)."
+                        }
+                    },
+                    "content-4": {
+                        "tab": "Choix techniques",
+                        "title": "Choix techniques et leur utilité",
+                        "content-list": {
+                            "list-item-1": "Next.js : Pages rapides, SEO natif, routing simple pour un site multi-pages",
+                            "list-item-2": "Pas de backend custom : Site vitrine : EmailJS suffit pour le contact, moins de complexité et de coûts",
+                            "list-item-3": "SEO local renforcé : Mots-clés géolocalisés + JSON-LD pour apparaître sur des recherches du type « tapissier Auxerre »",
+                            "list-item-4": "Tailwind + DaisyUI : UI cohérente, responsive, personnalisable sans framework CSS lourd",
+                            "list-item-5": "Carte en chargement dynamique : Leaflet ne fonctionne pas en SSR ; dynamic import évite les erreurs au build",
+                            "list-item-6": "Images lazy-loaded : Galeries nombreuses : meilleures performances sur mobile"
+                        }
+                    },
+                    "content-5": {
+                        "tab": "Impact",
+                        "title": "Impact sur le trafic et la visibilité",
+                        "content-list": {
+                            "list-item-1": "Présence professionnelle pour un artisan sur un marché encore très local et relationnel",
+                            "list-item-2": "Outil commercial : vitrine des réalisations et canal de demande de devis",
+                            "list-item-3": "Accessibilité : structure sémantique, textes alternatifs sur les visuels, labels sur le formulaire",
+                            "list-item-4": "Base évolutive : architecture claire pour ajouter des pages ou du contenu sans refonte"
+                        }
+                    }
+                }
+            }
+        ]
+    },
     "contact": {
-        "title": "Me",
-        "title2": "Contacter",
+        "title": "Plante une",
+        "title2": "Graine.",
+        "description": "Si tu as un projet web en tête ou simplement envie d'échanger, je serais ravie d'en discuter avec toi.",
+        "direct-line": "Ligne directe",
+        "direct-line-content": "slys.clara1@gmail.com",
+        "availability": "Disponibilité",
+        "availability-content": "Disponible pour de nouvelles missions",
         "name": "Nom",
         "name-placeholder": "Saisissez votre nom complet",
         "company": "Entreprise",

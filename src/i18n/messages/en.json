@@ -4,14 +4,21 @@
         "description": "Fullstack web developer specializing in JavaScript, Java, Angular, and React. Discover my projects and my world.",
         "job-title": "FullStack Web Developer"
     },
+    "nav": {
+        "mastery": "Mastery",
+        "behind": "Behind the screen",
+        "specimens": "Projects",
+        "contact": "Contact"
+    },
     "home": {
         "subtitle": "Passionate FullStack Web Developer",
-        "ctaProjects": "Discover my projects",
-        "ctaContact": "Contact me"
+        "ctaPortfolio": "View Portfolio",
+        "ctaContact": "Get in Touch"
     },
     "technologies": {
         "title": "Mastered",
         "title2": "Technologies",
+        "description": "The tools I use to cultivate robust, scalable ecosystems in the digital wild.",
         "languages": "Languages",
         "frameworks": "Frameworks",
         "libraries": "Libraries",
@@ -22,18 +29,373 @@
     "about": {
         "title": "Behind",
         "title2": "the Screen",
+        "subtitle": "Field Notes",
         "pin-alt": "Pin",
         "plant-alt": "Snow-covered plant",
+        "plant-description": "My plant universe",
         "mochi-alt": "Puppy Mochi",
-        "note1": "Hello, I'm Clara 👋 I'm a fullstack developer and what I love is turning ideas into concrete, useful and well thought out projects. I enjoy working on both the technical and user experience aspects, because for me, a good project is a mix of efficiency and simplicity!",
+        "mochi-description": "Mochi, the little monster",
+        "note1": "Hi, I'm Clara 👋 I'm a fullstack developer who loves turning ideas into simple, efficient projects—blending tech and great user experiences.",
         "note2": "Off-screen, I'm a huge plant lover! And recently, a little puppy has joined my daily life, which teaches me patience and creativity in a way other than coding!",
-        "note3": "If you'd like to know more about my background, you can take a look at my Resume. And if you have a web project in mind or simply want to chat, I would be happy to discuss it with you. You can contact me directly using the form below 👇",
-        "cta": "See my Resume",
+        "note3": "Curious about my background? Check my Resume. Have a project or want to chat? Contact me below 👇",
+        "cta": "Open my Resume",
         "resume-link": "EN_RESUME_SLYS_Clara.pdf"
     },
+    "experiences": {
+        "title": "My",
+        "title2": "Projects",
+        "experience-list": [
+            {
+                "short-title": "Jurni",
+                "long-title": "Jurni — AI-assisted career guidance platform",
+                "company": "Jurni Careers",
+                "companyUrl": "https://www.getjurni.com/",
+                "experienceUrl": "https://app.getjurni.com/",
+                "startDate": "01/10/2025",
+                "endDate": "Present",
+                "location": "Remote",
+                "short-description": "Jurni is a web application that helps users clarify their career goals through a comprehensive profile assessment (personality, motivations, needs, skills), then identify careers that truly align with that profile. The goal is to turn a often vague reflection (“What career suits me?”) into concrete, personalized, and actionable recommendations.",
+                "technologies": [
+                    "Next.js",
+                    "TypeScript",
+                    "Tailwind CSS",
+                    "FastAPI",
+                    "MongoDB",
+                    "Redis",
+                    "LangGraph",
+                    "OpenAI",
+                    "Anthropic",
+                    "Docker",
+                    "Docker Compose",
+                    "Traefik",
+                    "Mixpanel",
+                    "Langfuse",
+                    "Resend",
+                    "Google APIs",
+                    "Stripe",
+                    "EmailJS",
+                    "Google reCAPTCHA",
+                    "Google Analytics",
+                    "Google Tag Manager",
+                    "Google Search Console",
+                    "Google My Business"
+                ],
+                "description": {
+                    "content-1": {
+                        "tab": "Problems",
+                        "title": "Problems I solve with this project",
+                        "content-list": {
+                            "list-item-1": "Make career guidance more reliable and less based on gut feeling.",
+                            "list-item-2": "Combine multiple dimensions (psychology, motivations, skills, constraints) in a single experience.",
+                            "list-item-3": "Reduce the time between “I'm questioning my path” and “I have realistic options.”",
+                            "list-item-4": "Offer a smooth, understandable, and bilingual experience, even for a non-technical audience."
+                        }
+                    },
+                    "content-2": {
+                        "tab": "Stack",
+                        "title": "Technical stack used for this project",
+                        "content-list": {
+                            "list-item-1": "Frontend: Next.js (React) + TypeScript + Tailwind CSS\nFor a fast, modern, and maintainable interface.",
+                            "list-item-2": "Backend API: FastAPI (Python)\nTo expose robust, well-structured, and documented endpoints.",
+                            "list-item-3": "Database: MongoDB\nSuited to evolving user data and assessment results.",
+                            "list-item-4": "Cache: Redis\nTo speed up responses and reduce load on the main database.",
+                            "list-item-5": "AI / orchestration: LangGraph + LLM providers (OpenAI, Anthropic)\nTo manage multi-step conversational flows and personalized analyses.",
+                            "list-item-6": "API documentation: Swagger/OpenAPI\nTo facilitate testing, integration, and product/tech collaboration.",
+                            "list-item-7": "Payments: Stripe\nSecure handling of credit purchases.",
+                            "list-item-8": "Infra / deployment: Docker + Docker Compose + Traefik\nFor consistent (dev/prod), scalable environments that are easier to operate.",
+                            "list-item-9": "Observability & product: Mixpanel + Langfuse\nTo track usage, AI flow quality, and improve continuously.",
+                            "list-item-10": "Additional services: Resend (emails), Google APIs (integrations), etc."
+                        }
+                    },
+                    "content-3": {
+                        "tab": "Technical choices",
+                        "title": "Technical choices and why they are relevant",
+                        "content": "I chose this architecture to balance delivery speed, product quality, and scalability:",
+                        "content-list": {
+                            "list-item-1": "Next.js + TypeScript secure the frontend and accelerate the development of complex interfaces.",
+                            "list-item-2": "FastAPI provides a performant, clear API that is naturally compatible with OpenAPI documentation.",
+                            "list-item-3": "MongoDB is well suited to a product handling rich and evolving data structures.",
+                            "list-item-4": "Redis improves perceived responsiveness for users.",
+                            "list-item-5": "LangGraph properly structures AI workflows (conversation, extraction, scoring), making behavior more reliable than a simple single prompt.",
+                            "list-item-6": "Docker standardizes execution across all environments and reduces gaps between local and production.",
+                            "list-item-7": "Mixpanel and Langfuse provide robust observability tools suited to the scale of a SaaS product."
+                        }
+                    },
+                    "content-4": {
+                        "tab": "Impact",
+                        "title": "Impact generated",
+                        "content-list": {
+                            "list-item-1": "A more personalized and useful user experience for career decision-making.",
+                            "list-item-2": "More consistent career recommendations thanks to cross-referencing multiple signals.",
+                            "list-item-3": "Better product conversion through a clear journey, a credit model, and high-value analyses.",
+                            "list-item-4": "A solid technical foundation to iterate quickly, add new assessments, and evolve the product."
+                        }
+                    }
+                }
+            },
+            {
+                "short-title": "Simulphone / Simulforge",
+                "long-title": "Simulforge / Simulphone — Training suite for call centers",
+                "company": "AnthroPi",
+                "companyUrl": "https://anthropi.net/",
+                "experienceUrl": "https://simulphone.com/",
+                "startDate": "17/04/2023",
+                "endDate": "16/04/2025",
+                "location": "Dijon, France",
+                "short-description": "I contributed to the SimulSuite, an ecosystem made up of two complementary web applications and a shared library, sold under B2B licenses to training centers and client organizations.\nMy role: bug fixes, development of new features (frontend and backend), and ongoing maintenance of both applications and the common library.\nNote: the applications are licensed and access-restricted; I cannot include screenshots.",
+                "technologies": [
+                    "Angular",
+                    "TypeScript",
+                    "Bootstrap",
+                    "Angular Material",
+                    "ng-bootstrap",
+                    "RxJS",
+                    "ngx-translate",
+                    "PeerJS",
+                    "Socket.io",
+                    "Chart.js",
+                    "Quill",
+                    "MediaRecorder API"
+                ],
+                "description": {
+                    "content-1": {
+                        "tab": "Overview",
+                        "title": "Overview of the training suite",
+                        "content-list": {
+                            "list-item-1": "SimulPhone:\nAudience: Trainees and trainers (call centers)\nRole: Call simulator to practice handling stress and difficult situations on the phone",
+                            "list-item-2": "SimulForge:\nAudience: Internal teams (back office)\nRole: Client administration, training sessions, and creation of educational content used in SimulPhone",
+                            "list-item-3": "SimulLibrary:\nAudience: Developers\nRole: Shared code (services, models, components) to avoid duplication between the two applications (SimulPhone and SimulForge)"
+                        }
+                    },
+                    "content-2": {
+                        "tab": "Problems",
+                        "title": "Problems solved with these projects",
+                        "content-list": {
+                            "list-item-1": "For call centers: train agents in a safe environment, with no impact on real customers, using realistic scenarios (stressful calls, emotional states, ambient sounds).",
+                            "list-item-2": "For trainers: run live sessions, monitor trainees, listen to/replay recordings, and analyze performance.",
+                            "list-item-3": "For the publisher: manage a licensed client base, configure training programs, and maintain a catalog of simulations (scenes, scripts, personas, puzzles, etc.) from a centralized back office."
+                        }
+                    },
+                    "content-3": {
+                        "tab": "Stack",
+                        "title": "Technical stack used for this project",
+                        "content-list": {
+                            "list-item-1": "Angular 15 + TypeScript",
+                            "list-item-2": "Bootstrap 5 + Angular Material + ng-bootstrap",
+                            "list-item-3": "RxJS for reactive stream management",
+                            "list-item-4": "ngx-translate — multilingual interface (French, English)",
+                            "list-item-5": "PeerJS — peer-to-peer audio communication for call simulations",
+                            "list-item-6": "Socket.io — real-time (trainer audio room, connected trainee tracking)",
+                            "list-item-7": "Chart.js — dashboards and statistics",
+                            "list-item-8": "Quill — rich content editing (scripts, descriptions)",
+                            "list-item-9": "MediaRecorder API — recording of simulated calls",
+                            "list-item-10": "Node.js + Express",
+                            "list-item-11": "Sequelize — ORM on MariaDB (business data: clients, users, sessions, scenes, licenses, permissions…)",
+                            "list-item-12": "MongoDB — complementary data (some document collections)",
+                            "list-item-13": "Socket.io — real-time orchestration of simulations (trainer/trainee connections, call status)",
+                            "list-item-14": "JWT + bcrypt — authentication and access security",
+                            "list-item-15": "Nodemailer — email notifications",
+                            "list-item-16": "Puppeteer — PDF document generation",
+                            "list-item-17": "Shared HTTP services (users, sessions, scenes, callers, permissions, translations…)",
+                            "list-item-18": "Shared TypeScript models and interfaces",
+                            "list-item-19": "Reusable UI components, interceptors (JWT token, language)",
+                            "list-item-20": "Internal packages: password validator, multiselect",
+                            "list-item-21": "Docker — images per application and per environment (prod, staging, demo, local)",
+                            "list-item-22": "GitLab CI/CD — lint, security analysis (SAST), frontend build, Docker image generation",
+                            "list-item-23": "Hotjar — product usage tracking",
+                            "list-item-24": "Multi-environment deployments (simulphone.anthropi.fr, simulforge.anthropi.fr, staging, demo)"
+                        }
+                    },
+                    "content-4": {
+                        "tab": "Key features",
+                        "title": "Key features of the training suite",
+                        "content-list": {
+                            "list-item-1": "Call simulation with real-time audio flow, ringtones, ambient sounds, and recording",
+                            "list-item-2": "Trainee / trainer journey (dashboards, participant management)",
+                            "list-item-3": "Playback of recorded calls",
+                            "list-item-4": "Complementary workshops (escape game, puzzles, educational modules)",
+                            "list-item-5": "Client and organization management (users, granular permissions)",
+                            "list-item-6": "Session and training management",
+                            "list-item-7": "Creation and editing of simulations (scenes, phases, personas, scripts, emotional states, soundtracks)",
+                            "list-item-8": "Pedagogy, resources, localization, statistics, and administration modules"
+                        }
+                    },
+                    "content-5": {
+                        "tab": "Technical choices",
+                        "title": "Technical choices and their value",
+                        "content-list": {
+                            "list-item-1": "Angular monorepo (2 apps + lib): A single frontend repository, coordinated builds, shared code via the library",
+                            "list-item-2": "Simulsuite Library: Avoids duplicating services and models; a fix benefits both apps",
+                            "list-item-3": "MariaDB + Sequelize: Structured relational data (clients, sessions, permissions) with migrations and typed queries",
+                            "list-item-4": "MongoDB as a complement: Flexibility for certain document-based content",
+                            "list-item-5": "Socket.io + PeerJS: Real-time for trainer control; direct audio between trainee and simulated scenario",
+                            "list-item-6": "Granular permissions: Each role (trainer, admin, editor…) only accesses authorized features",
+                            "list-item-7": "Docker + GitLab CI: Reproducible deployments and automated pipelines per environment"
+                        }
+                    }
+                }
+            },
+            {
+                "short-title": "Public procurement",
+                "long-title": "Public procurement — access to 100% of public tenders",
+                "company": "PublicTrade",
+                "companyUrl": "https://marches-publics.com/",
+                "experienceUrl": "https://marches-publics.com/",
+                "startDate": "05/12/2025",
+                "endDate": "17/12/2025",
+                "location": "Remote",
+                "short-description": "Marches-publics.com is a platform that centralizes all public tenders published in France, including those not listed on official channels, and allows companies to configure targeted alerts, instantly access technical documentation (DCE), and track award history. My mission on this project: completely redesign the user interface to modernize it, make it more readable, and improve the overall experience for professional users. The redesign is currently in progress and has not yet been deployed to production.",
+                "technologies": [
+                    "Angular",
+                    "TypeScript",
+                    "Tailwind CSS",
+                    "Lovable"
+                ],
+                "description": {
+                    "content-1": {
+                        "tab": "Problems",
+                        "title": "Problems solved with this project",
+                        "content-list": {
+                            "list-item-1": "Give an aging interface a modern, smooth, and consistent experience that meets current web standards.",
+                            "list-item-2": "Improve readability and visual hierarchy so non-technical users (sales reps, consultants, architects…) can navigate without friction.",
+                            "list-item-3": "Clean up a codebase that had become bloated over time: remove redundancies, delete unused code, reduce the overall weight of the application.",
+                            "list-item-4": "Establish a solid, structured, and maintainable frontend foundation to help the product team iterate more easily in the future.",
+                            "list-item-5": "Make the interface suitable for all screens, especially for users on the go."
+                        }
+                    },
+                    "content-2": {
+                        "tab": "Stack",
+                        "title": "Technical stack used for this project",
+                        "content-list": {
+                            "list-item-1": "Frontend: Angular + TypeScript — For a robust, modular architecture suited to complex business applications maintained over the long term.",
+                            "list-item-2": "Mockup: Lovable, a no-code/AI design tool used to establish the visual foundations of the new interface before integration."
+                        }
+                    },
+                    "content-3": {
+                        "tab": "Technical choices",
+                        "title": "Technical choices and their relevance",
+                        "content-list": {
+                            "list-item-1": "Starting from a mockup created on Lovable made it possible to quickly validate the visual direction and interface choices before writing code — a concrete time saver and a way to limit back-and-forth between design and development.",
+                            "list-item-2": "For integration, Angular was the natural choice: it is an opinionated framework that enforces a clear structure and strict conventions. This is a real advantage in a redesign context, as it ensures readable and consistent code, even when multiple developers work on the project. Combined with TypeScript, a language that catches errors before runtime, it delivers a reliable interface that is easy to evolve without accumulating technical debt.\nThis choice is also consistent with the existing stack: reusing the same technology as the previous version made it possible to migrate progressively, without starting from scratch or destabilizing what already works."
+                        }
+                    },
+                    "content-4": {
+                        "tab": "Impact",
+                        "title": "Impact generated by this redesign",
+                        "content-list": {
+                            "list-item-1": "A modernized, clearer, and more pleasant interface that better reflects the quality of the service offered.",
+                            "list-item-2": "A lighter and more performant application thanks to a deep cleanup of the existing code (removal of redundancies, dead code removal).",
+                            "list-item-3": "A redesigned user experience to reduce friction and speed up key journeys (search, access to DCE, alert management).",
+                            "list-item-4": "A cleaned-up and maintainable codebase that will facilitate future product evolution.",
+                            "list-item-5": "Better adaptability across devices for professionals often on the move."
+                        }
+                    }
+                }
+            },
+            {
+                "short-title": "Showcase website",
+                "long-title": "Showcase website — Atelier Jean-Claude Larrivé (upholsterer & interior decorator)",
+                "company": "Jean-Claude Larrivé",
+                "companyUrl": "https://www.pagesjaunes.fr/pros/08567045",
+                "experienceUrl": "https://www.atelier-larrive.fr/",
+                "startDate": "08/05/2025",
+                "endDate": "27/06/2025",
+                "location": "Remote",
+                "short-description": "Professional website for Jean-Claude Larrivé, an artisan upholsterer and interior decorator in Auxerre (Yonne). The site showcases his expertise, portfolio, and services (chair restoration, interior decoration, introductory workshops), with a clear goal: be visible locally and make it easy to get in touch (quotes, advice).",
+                "technologies": [
+                    "Next.js",
+                    "React",
+                    "TypeScript",
+                    "Tailwind CSS",
+                    "DaisyUI",
+                    "Google Fonts",
+                    "EmailJS",
+                    "Leaflet",
+                    "OpenStreetMap",
+                    "YouTube API",
+                    "Lucide React",
+                    "next-sitemap",
+                    "ESLint",
+                    "Prettier",
+                    "Vercel"
+                ],
+                "description": {
+                    "content-1": {
+                        "tab": "Problems",
+                        "title": "Problems solved with this project",
+                        "content-list": {
+                            "list-item-1": "Local visibility: an artisan without a web presence loses inquiries from clients searching for an upholsterer in Auxerre or nearby (Avallon, markets, etc.).",
+                            "list-item-2": "Credibility: highlight over 35 years of experience, the workshop, and concrete work (armchairs, sofas, curtains, blinds).",
+                            "list-item-3": "Conversion: make it easy to get in touch (form, phone, email, location).",
+                            "list-item-4": "Education: inform visitors about upholstery workshops offered at the atelier."
+                        }
+                    },
+                    "content-2": {
+                        "tab": "Stack",
+                        "title": "Technical stack used for this project",
+                        "content-list": {
+                            "list-item-1": "Next.js 15 (Pages Router) + React 19 + TypeScript",
+                            "list-item-2": "Tailwind CSS 4 + DaisyUI (custom theme in the atelier's colors)",
+                            "list-item-3": "Google Fonts (Parisienne, Zeyada) for an artisan visual identity",
+                            "list-item-4": "EmailJS: contact form without a dedicated backend (client-side email sending)",
+                            "list-item-5": "Leaflet + react-leaflet + OpenStreetMap: interactive map of the workshop (dynamic loading, no SSR)",
+                            "list-item-6": "YouTube API: embedded video on the Portfolio page (blinds, installation)",
+                            "list-item-7": "Lucide React: icons (navigation, contact, map)",
+                            "list-item-8": "Dedicated SEO component per page (title, description, keywords, canonical)",
+                            "list-item-9": "Schema.org structured data (LocalBusiness, Person, Organization) for local SEO",
+                            "list-item-10": "next-sitemap — automatic sitemap and robots.txt generation at build time",
+                            "list-item-11": "Legal notices and terms of use pages",
+                            "list-item-12": "ESLint + Prettier",
+                            "list-item-13": "Vercel hosting (suited to Next.js, simple deployment)",
+                            "list-item-14": "Static site / minimal server logic: low hosting cost and light maintenance"
+                        }
+                    },
+                    "content-3": {
+                        "tab": "Content",
+                        "title": "Content and user journey",
+                        "content-list": {
+                            "list-item-1": "Home: Introduction, workshop map, contact call-to-action",
+                            "list-item-2": "Portfolio: Photo galleries (seating, other creations), responsive layout, trade video",
+                            "list-item-3": "Materials: Fabrics, traditional craftsmanship, eco-friendly pictograms (Green Line, rPET, etc.)",
+                            "list-item-4": "Workshops: Training offer at the atelier (pricing, terms)",
+                            "list-item-5": "Contact: Form, contact details, Google Maps link",
+                            "list-item-6": "Responsive navigation (mobile burger menu), polished layout (polaroid-style galleries positioned differently depending on screen size)."
+                        }
+                    },
+                    "content-4": {
+                        "tab": "Technical choices",
+                        "title": "Technical choices and their value",
+                        "content-list": {
+                            "list-item-1": "Next.js: Fast pages, native SEO, simple routing for a multi-page site",
+                            "list-item-2": "No custom backend: For a showcase site, EmailJS is enough for contact — less complexity and lower costs",
+                            "list-item-3": "Enhanced local SEO: Geolocated keywords + JSON-LD to appear on searches like “upholsterer Auxerre”",
+                            "list-item-4": "Tailwind + DaisyUI: Consistent, responsive UI, customizable without a heavy CSS framework",
+                            "list-item-5": "Dynamically loaded map: Leaflet does not work with SSR; dynamic import avoids build errors",
+                            "list-item-6": "Lazy-loaded images: With many galleries, better performance on mobile"
+                        }
+                    },
+                    "content-5": {
+                        "tab": "Impact",
+                        "title": "Impact on traffic and visibility",
+                        "content-list": {
+                            "list-item-1": "Professional presence for an artisan in a market that is still very local and relationship-driven",
+                            "list-item-2": "Sales tool: showcase of work and channel for quote requests",
+                            "list-item-3": "Accessibility: semantic structure, alt text on visuals, form labels",
+                            "list-item-4": "Scalable foundation: clear architecture to add pages or content without a full redesign"
+                        }
+                    }
+                }
+            }
+        ]
+    },
     "contact": {
-        "title": "Contact",
-        "title2": "Me",
+        "title": "Plant a",
+        "title2": "Seed.",
+        "description": "If you have a web project in mind or simply want to chat, I would be happy to discuss it with you.",
+        "direct-line": "Direct line",
+        "direct-line-content": "slys.clara1@gmail.com",
+        "availability": "Availability",
+        "availability-content": "Open for new missions",
         "name": "Name",
         "name-placeholder": "Enter your full name",
         "company": "Company",

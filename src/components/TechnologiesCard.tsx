@@ -1,19 +1,15 @@
 export default function TechnologiesCard({ technologies, title }: { technologies: { name: string; src: string }[]; title: string }) {
     return (
-        <div className="group bg-black/30 backdrop-blur-sm rounded-2xl p-6 shadow-lg hover:shadow-xl hover:scale-105 transition-all duration-300 border border-green-800/30">
-            <div className="text-xl mb-4 text-white/75 group-hover:text-emerald-400 transition-all duration-300">{title}</div>
-            <div className="flex flex-wrap gap-4 justify-center">
+        <div className="space-y-4">
+            <h3 className="font-mono text-[10px] uppercase tracking-widest text-emerald-bright">{title}</h3>
+            <div className="flex flex-wrap gap-2">
                 {technologies.map((technology) => (
-                    <div key={technology.name} className="flex flex-col items-center justify-center gap-2 p-2">
-                        <img
-                            src={technology.src}
-                            alt={technology.name}
-                            className="size-12 sm:size-15 sm:grayscale group-hover:grayscale-0 transition-all duration-300"
-                        />
-                        <span className="text-white/50 text-xs text-center sm:opacity-0 group-hover:opacity-100 transition-all duration-300">
-                            {technology.name}
-                        </span>
-                    </div>
+                    <span
+                        key={technology.name}
+                        className="px-3 py-1 bg-forest border border-emerald-deep rounded text-xs hover:border-emerald-bright hover:text-emerald-bright transition-colors cursor-default"
+                    >
+                        {technology.name}
+                    </span>
                 ))}
             </div>
         </div>
