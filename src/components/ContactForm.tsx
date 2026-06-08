@@ -119,7 +119,8 @@ export default function ContactForm() {
                 <div className="grid md:grid-cols-2 gap-16">
                     <div className="space-y-8">
                         <h2 className="font-display text-4xl md:text-5xl leading-tight">
-                            {t('title')} <span className="italic text-emerald-bright">{t('title2')}</span>
+                            {t('title')}
+                            <span className="italic text-emerald-bright">{t('title2')}</span>
                         </h2>
                         <p className="text-paper/60 text-sm leading-relaxed max-w-sm">{t('description')}</p>
                         <div className="space-y-4">

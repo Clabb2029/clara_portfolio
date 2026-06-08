@@ -2,6 +2,14 @@
 
 import { useTranslations } from 'next-intl';
 import { usePathname, useRouter } from 'next/navigation';
+import { useState } from 'react';
+
+const NAV_LINKS = [
+    { href: '#technologies', key: 'mastery' as const },
+    { href: '#about', key: 'behind' as const },
+    { href: '#experiences', key: 'specimens' as const },
+    { href: '#contact', key: 'contact' as const },
+];
 
 export function NavLanguageSwitch() {
     const router = useRouter();
@@ -40,28 +48,110 @@ export function NavLanguageSwitch() {
     );
 }
 
-export default function Nav() {
+function NavLinks({ onNavigate, className }: { onNavigate?: () => void; className?: string }) {
     const t = useTranslations('nav');
 
     return (
-        <nav className="fixed top-0 w-full z-50 px-6 py-4 flex justify-between items-center bg-forest/80 backdrop-blur-md border-b border-emerald-deep/30">
-            <span className="font-display text-xl font-bold tracking-tight italic">CS.</span>
-            <div className="flex items-center gap-8">
-                <div className="flex gap-8 text-xs font-mono uppercase tracking-widest text-paper/60">
-                    <a href="#technologies" className="hover:text-emerald-bright transition-colors">
-                        {t('mastery')}
-                    </a>
-                    <a href="#about" className="hover:text-emerald-bright transition-colors">
-                        {t('behind')}
-                    </a>
-                    <a href="#experiences" className="hover:text-emerald-bright transition-colors">
-                        {t('specimens')}
-                    </a>
-                    <a href="#contact" className="hover:text-emerald-bright transition-colors">
-                        {t('contact')}
-                    </a>
+        <>
+            {NAV_LINKS.map(({ href, key }) => (
+                <a
+                    key={href}
+                    href={href}
+                    onClick={onNavigate}
+                    className={className ?? 'hover:text-emerald-bright transition-colors'}
+                >
+                    {t(key)}
+                </a>
+            ))}
+        </>
+    );
+}
+
+function BurgerButton({
+    isOpen,
+    onClick,
+    openLabel,
+    closeLabel,
+}: {
+    isOpen: boolean;
+    onClick: () => void;
+    openLabel: string;
+    closeLabel: string;
+}) {
+    return (
+        <button
+            type="button"
+            onClick={onClick}
+            aria-expanded={isOpen}
+            aria-label={isOpen ? closeLabel : openLabel}
+            className="md:hidden flex flex-col justify-center items-center gap-1.5 w-9 h-9 text-paper/80 hover:text-emerald-bright transition-colors"
+        >
+            <span
+                className={`block h-0.5 w-6 bg-current transition-all duration-300 origin-center ${
+                    isOpen ? 'translate-y-2 rotate-45' : ''
+                }`}
+            />
+            <span className={`block h-0.5 w-6 bg-current transition-all duration-300 ${isOpen ? 'opacity-0 scale-x-0' : ''}`} />
+            <span
+                className={`block h-0.5 w-6 bg-current transition-all duration-300 origin-center ${
+                    isOpen ? '-translate-y-2 -rotate-45' : ''
+                }`}
+            />
+        </button>
+    );
+}
+
+export default function Nav() {
+    const pathname = usePathname() ?? '';
+    const locale = pathname.startsWith('/en') ? 'en' : 'fr';
+    const [isOpen, setIsOpen] = useState(false);
+
+    const closeMenu = () => setIsOpen(false);
+    const toggleMenu = () => setIsOpen((open) => !open);
+
+    return (
+        <nav className="fixed top-0 w-full z-50 bg-forest/80 backdrop-blur-md border-b border-emerald-deep/30">
+            <div className="px-4 sm:px-6 py-4 flex justify-between items-center">
+                <span className="font-display text-xl font-bold tracking-tight italic">CS.</span>
+
+                <div className="hidden md:flex items-center gap-8">
+                    <div className="flex gap-8 text-xs font-mono uppercase tracking-widest text-paper/60">
+                        <NavLinks />
+                    </div>
+                    <NavLanguageSwitch />
                 </div>
-                <NavLanguageSwitch />
+
+                <div className="flex md:hidden items-center gap-4">
+                    <NavLanguageSwitch />
+                    <BurgerButton
+                        isOpen={isOpen}
+                        onClick={toggleMenu}
+                        openLabel={locale === 'fr' ? 'Ouvrir le menu' : 'Open menu'}
+                        closeLabel={locale === 'fr' ? 'Fermer le menu' : 'Close menu'}
+                    />
+                </div>
+            </div>
+
+            <div
+                className={`md:hidden overflow-hidden transition-[max-height] duration-300 ease-in-out ${
+                    isOpen ? 'max-h-64' : 'max-h-0'
+                }`}
+                aria-hidden={!isOpen}
+            >
+                <div
+                    className={`px-4 sm:px-6 pb-4 border-t border-emerald-deep/30 transition-all duration-300 ease-in-out ${
+                        isOpen
+                            ? 'translate-y-0 opacity-100'
+                            : '-translate-y-full opacity-0 pointer-events-none'
+                    }`}
+                >
+                    <div className="flex flex-col gap-4 pt-4 text-xs font-mono uppercase tracking-widest text-paper/60">
+                        <NavLinks
+                            onNavigate={closeMenu}
+                            className="hover:text-emerald-bright transition-colors py-1"
+                        />
+                    </div>
+                </div>
             </div>
         </nav>
     );

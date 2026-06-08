@@ -9,9 +9,7 @@ export default function PrivacyPolicy() {
     return (
         <>
             <SEO title={t('seo-title')} description={t('seo-description')} keywords={t('seo-keywords')} canonical={t('seo-canonical')} />
-            <div className="bg-black/40 backdrop-blur-sm">
-                <GenericLegal type="privacy-policy" />
-            </div>
+            <GenericLegal type="privacy-policy" />
         </>
     );
 }

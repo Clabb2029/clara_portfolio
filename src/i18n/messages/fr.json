@@ -24,15 +24,16 @@
         "libraries": "Librairies",
         "databases": "Bases de données",
         "tests": "Tests",
+        "versionning": "Versionning",
         "tools": "Outils"
     },
     "about": {
         "title": "Derrière",
         "title2": "l'Écran",
-        "subtitle": "Notes de terrain",
+        "subtitle": "Mes notes",
         "pin-alt": "Punaise",
         "plant-alt": "Plante enneigée",
-        "plant-description": "Les plantes de mon univers",
+        "plant-description": "Mes plantes",
         "mochi-alt": "Mochi chiot",
         "mochi-description": "Mochi, le petit monstre",
         "note1": "Salut, moi c'est Clara 👋 Je suis développeuse fullstack qui aime transformer des idées en projets simples, efficaces, mélangeant technologie et bonne expérience utilisateur.",
@@ -42,8 +43,11 @@
         "resume-link": "CV_SLYS_Clara.pdf"
     },
     "experiences": {
-        "title": "Mes",
-        "title2": "Projets",
+        "subtitle": "Inventaire",
+        "title": "Pièces de",
+        "title2": "collection",
+        "visitProject": "Visiter le projet ↗",
+        "specimenLabel": "Spécimen n°{number}",
         "experience-list": [
             {
                 "short-title": "Jurni",
@@ -134,7 +138,7 @@
                 }
             },
             {
-                "short-title": "Simulphone / Simulforge",
+                "short-title": "Simulforge / Simulphone",
                 "long-title": "Simulforge / Simulphone — Suite de formation pour centres d'appels",
                 "company": "AnthroPi",
                 "companyUrl": "https://anthropi.net/",
@@ -236,8 +240,8 @@
                 }
             },
             {
-                "short-title": "Marchés publics",
-                "long-title": "Marchés publics — donne accès à 100% des marchés publics",
+                "short-title": "Marches-publics.com",
+                "long-title": "Marches-publics.com — donne accès à 100% des marchés publics",
                 "company": "PublicTrade",
                 "companyUrl": "https://marches-publics.com/",
                 "experienceUrl": "https://marches-publics.com/",
@@ -389,8 +393,8 @@
         ]
     },
     "contact": {
-        "title": "Plante une",
-        "title2": "Graine.",
+        "title": "Parlons",
+        "title2": "-en.",
         "description": "Si tu as un projet web en tête ou simplement envie d'échanger, je serais ravie d'en discuter avec toi.",
         "direct-line": "Ligne directe",
         "direct-line-content": "slys.clara1@gmail.com",

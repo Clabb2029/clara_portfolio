@@ -15,7 +15,7 @@ export default function LanguageSwitch() {
     };
 
     return (
-        <div className="absolute top-5 right-5 p-2 backdrop-blur-sm rounded-xl shadow-lg bg-green-900/50 border border-green-900/50 z-10">
+        <div className="absolute top-5 right-5 p-2 rounded-xl bg-emerald-deep/10 border border-emerald-deep/30 z-10">
             <div className="inline-flex items-center gap-2">
                 <label htmlFor="switch" className="text-white text-sm cursor-pointer">
                     FR
@@ -26,7 +26,7 @@ export default function LanguageSwitch() {
                         type="checkbox"
                         checked={locale === 'en'}
                         onChange={switchLocale}
-                        className="peer appearance-none w-11 h-5 bg-slate-100 rounded-full checked:bg-green-900 cursor-pointer transition-colors duration-300"
+                        className="peer appearance-none w-11 h-5 bg-slate-100 rounded-full border-[2px] border-emerald-deep/30 checked:bg-green-900 cursor-pointer transition-colors duration-300"
                     />
                     <label
                         htmlFor="switch"

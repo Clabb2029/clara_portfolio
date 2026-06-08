@@ -151,6 +151,10 @@
     font-weight: 700;
 }
 
+.grecaptcha-badge {
+    visibility: hidden;
+}
+
 /* Custom animations for floating elements */
 @keyframes float {
     0%,
@@ -199,6 +203,30 @@
 /* Smooth scrolling */
 html {
     scroll-behavior: smooth;
+}
+
+/* Subtle horizontal scrollbar — always visible when content overflows */
+.scrollbar-subtle-x {
+    scrollbar-width: thin;
+    scrollbar-color: rgb(16 185 129 / 0.35) rgb(6 78 59 / 0.2);
+}
+
+.scrollbar-subtle-x::-webkit-scrollbar {
+    height: 3px;
+}
+
+.scrollbar-subtle-x::-webkit-scrollbar-track {
+    background: rgb(6 78 59 / 0.2);
+    border-radius: 9999px;
+}
+
+.scrollbar-subtle-x::-webkit-scrollbar-thumb {
+    background: rgb(16 185 129 / 0.35);
+    border-radius: 9999px;
+}
+
+.scrollbar-subtle-x::-webkit-scrollbar-thumb:hover {
+    background: rgb(16 185 129 / 0.55);
 }
 
 /* Custom scrollbar */

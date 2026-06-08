@@ -4,58 +4,43 @@ import TechnologiesCard from './TechnologiesCard';
 export default function Technologies() {
     const t = useTranslations('technologies');
 
-    const langages = [
-        { name: 'JavaScript', src: './languages/javascript.png' },
-        { name: 'TypeScript', src: './languages/typescript.png' },
-        { name: 'Java', src: './languages/java.png' },
-        { name: 'Node.js', src: './languages/nodejs.png' },
-        { name: 'HTML', src: './languages/html.png' },
-        { name: 'CSS', src: './languages/css.png' },
-    ];
+    const langages = ['JavaScript', 'TypeScript', 'Java', 'Node.js', 'HTML', 'CSS', 'SASS', 'SCSS'];
 
     const frameworks = [
-        { name: 'React', src: './frameworks/react.png' },
-        { name: 'Next.js', src: './frameworks/nextjs.png' },
-        { name: 'Angular', src: './frameworks/angular.png' },
-        { name: 'Spring Boot', src: './frameworks/spring.png' },
+        'React',
+        'React Native',
+        'Next.js',
+        'Angular',
+        'Spring Boot',
+        'Hibernate',
+        'Socket.io',
+        'PeerJS',
+        'Chart.js',
+        'Quill',
     ];
 
-    const libraries = [
-        { name: 'Tailwind CSS', src: './libraries/tailwind.png' },
-        { name: 'Bootstrap', src: './libraries/bootstrap.png' },
-        { name: 'DaisyUI', src: './libraries/daisyui.png' },
-        { name: 'React Bootstrap', src: './libraries/react_bootstrap.png' },
-    ];
+    const libraries = ['Tailwind CSS', 'Bootstrap', 'DaisyUI', 'Material UI', 'React Bootstrap', 'jQuery', 'Express.js'];
 
-    const databases = [
-        { name: 'MySQL', src: './db/mysql.png' },
-        { name: 'MariaDB', src: './db/mariadb.png' },
-        { name: 'PostgreSQL', src: './db/postgresql.png' },
-        { name: 'MongoDB', src: './db/mongodb.png' },
-        { name: 'Postman', src: './db/postman.png' },
-        { name: 'Prisma', src: './db/prisma.svg' },
-    ];
+    const databases = ['MySQL', 'MariaDB', 'PostgreSQL', 'MongoDB', 'Prisma', 'Sequelize'];
 
-    const tests = [
-        { name: 'Jasmine', src: './tests/jasmine.png' },
-        { name: 'Karma', src: './tests/karma.png' },
-        { name: 'JUnit', src: './tests/junit.png' },
-        { name: 'AssertJ', src: './tests/assertj.png' },
-    ];
+    const tests = ['Jasmine', 'Karma', 'JUnit', 'Mockito', 'AssertJ'];
+
+    const versionning = ['Git', 'GitHub', 'GitLab', 'Docker', 'CI / CD', 'Stripe'];
 
     const tools = [
-        { name: 'Git', src: './tools/git.png' },
-        { name: 'GitHub', src: './tools/github.png' },
-        { name: 'GitLab', src: './tools/gitlab.png' },
-        { name: 'VS Code', src: './tools/visual_studio_code.png' },
-        { name: 'IntelliJ', src: './tools/intellij.png' },
-        { name: 'Eclipse', src: './tools/eclipse.png' },
-        { name: 'Docker', src: './tools/docker.png' },
-        { name: 'Linux', src: './tools/linux.png' },
-        { name: 'Windows', src: './tools/windows.png' },
-        { name: 'Figma', src: './tools/figma.png' },
-        { name: 'Asana', src: './tools/asana.svg' },
-        { name: 'Notion', src: './tools/notion.png' },
+        'Postman',
+        'VS Code',
+        'Cursor (Claude AI)',
+        'IntelliJ',
+        'Eclipse',
+        'Linux',
+        'Windows',
+        'Figma',
+        'Whimsical',
+        'Asana',
+        'Notion',
+        'Trello',
+        'Agile / SCRUM',
     ];
 
     return (
@@ -76,10 +61,10 @@ export default function Technologies() {
                             { technologies: libraries, title: t('libraries') },
                             { technologies: databases, title: t('databases') },
                             { technologies: tests, title: t('tests') },
+                            { technologies: versionning, title: t('versionning') },
                             { technologies: tools, title: t('tools') },
                         ].map(({ technologies, title }) => {
-                            const uniqueTechnologies = Array.from(new Map(technologies.map((tech) => [tech.name, tech])).values());
-                            return <TechnologiesCard key={title} technologies={uniqueTechnologies} title={title} />;
+                            return <TechnologiesCard key={title} technologies={technologies} title={title} />;
                         })}
                     </div>
                 </div>

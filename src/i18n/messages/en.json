@@ -24,6 +24,7 @@
         "libraries": "Libraries",
         "databases": "Databases",
         "tests": "Tests",
+        "versionning": "Versionning",
         "tools": "Tools"
     },
     "about": {
@@ -42,8 +43,11 @@
         "resume-link": "EN_RESUME_SLYS_Clara.pdf"
     },
     "experiences": {
-        "title": "My",
-        "title2": "Projects",
+        "subtitle": "Catalogued Works",
+        "title": "Featured",
+        "title2": "Specimen",
+        "visitProject": "Visit project ↗",
+        "specimenLabel": "Specimen №{number}",
         "experience-list": [
             {
                 "short-title": "Jurni",
@@ -134,7 +138,7 @@
                 }
             },
             {
-                "short-title": "Simulphone / Simulforge",
+                "short-title": "Simulforge / Simulphone",
                 "long-title": "Simulforge / Simulphone — Training suite for call centers",
                 "company": "AnthroPi",
                 "companyUrl": "https://anthropi.net/",
@@ -236,8 +240,8 @@
                 }
             },
             {
-                "short-title": "Public procurement",
-                "long-title": "Public procurement — access to 100% of public tenders",
+                "short-title": "Marches-publics.com",
+                "long-title": "Marches-publics.com — access to 100% of public tenders",
                 "company": "PublicTrade",
                 "companyUrl": "https://marches-publics.com/",
                 "experienceUrl": "https://marches-publics.com/",
