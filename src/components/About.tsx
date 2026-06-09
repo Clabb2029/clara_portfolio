@@ -47,21 +47,21 @@ export default function About() {
                         <div className="lg:w-2/3 grid grid-cols-1 sm:grid-cols-2 gap-8 m-auto w-full">
                             <div className="bg-yellow-100 rotate-2 p-5 shadow-md aspect-square w-full flex flex-col hover:-rotate-2 transition-transform duration-300">
                                 <div className="w-3 h-3 rounded-full bg-red-400 mx-auto -mt-7 mb-3 shadow-sm shrink-0"></div>
-                                <p className="text-forest font-mono text-base sm:text-sm sm:leading-relaxed flex-1 flex items-center justify-center text-center overflow-y-auto">
+                                <p className="text-forest font-mono text-sm xs:text-base sm:text-sm md:leading-relaxed flex-1 flex items-center justify-center text-center overflow-y-auto">
                                     {t('note1')}
                                 </p>
                             </div>
 
                             <div className="bg-emerald-100 -rotate-3 p-5 shadow-md aspect-square w-full flex flex-col hover:rotate-3 transition-transform duration-300">
                                 <div className="w-3 h-3 rounded-full bg-blue-400 mx-auto -mt-7 mb-3 shadow-sm shrink-0"></div>
-                                <p className="text-forest font-mono text-base sm:text-sm sm:leading-relaxed flex-1 flex items-center justify-center text-center overflow-y-auto">
+                                <p className="text-forest font-mono text-sm xs:text-base sm:text-sm md:leading-relaxed flex-1 flex items-center justify-center text-center overflow-y-auto">
                                     {t('note2')}
                                 </p>
                             </div>
 
                             <div className="bg-emerald-50 -rotate-2 p-5 shadow-md aspect-square w-full flex flex-col hover:rotate-2 transition-transform duration-300">
                                 <div className="w-3 h-3 rounded-full bg-green-400 mx-auto -mt-7 mb-3 shadow-sm shrink-0"></div>
-                                <p className="text-forest font-mono text-base sm:text-sm sm:leading-relaxed flex-1 flex items-center justify-center text-center overflow-y-auto">
+                                <p className="text-forest font-mono text-sm xs:text-base sm:text-sm md:leading-relaxed flex-1 flex items-center justify-center text-center overflow-y-auto">
                                     {t('note3')}
                                 </p>
                             </div>
