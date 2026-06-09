@@ -125,25 +125,25 @@ export default function ContactForm() {
                         <p className="text-paper/60 text-sm leading-relaxed max-w-sm">{t('description')}</p>
                         <div className="space-y-4">
                             <div className="flex items-center gap-4">
-                                <div className="size-12 rounded-full bg-emerald-bright/10 grid place-items-center text-emerald-bright font-mono">
+                                <div className="shrink-0 size-8 sm:size-12 rounded-full bg-emerald-bright/10 grid place-items-center text-emerald-bright font-mono">
                                     @
                                 </div>
                                 <div>
                                     <p className="text-[10px] uppercase font-mono text-emerald-bright tracking-widest">
                                         {t('direct-line')}
                                     </p>
-                                    <p className="text-lg">{t('direct-line-content')}</p>
+                                    <p className="sm:text-lg leading-tight">{t('direct-line-content')}</p>
                                 </div>
                             </div>
                             <div className="flex items-center gap-4">
-                                <div className="size-12 rounded-full bg-emerald-bright/10 grid place-items-center text-emerald-bright font-mono">
+                                <div className="shrink-0 size-8 sm:size-12 rounded-full bg-emerald-bright/10 grid place-items-center text-emerald-bright font-mono">
                                     ●
                                 </div>
                                 <div>
                                     <p className="text-[10px] uppercase font-mono text-emerald-bright tracking-widest">
                                         {t('availability')}
                                     </p>
-                                    <p className="text-lg">{t('availability-content')}</p>
+                                    <p className="sm:text-lg leading-tight">{t('availability-content')}</p>
                                 </div>
                             </div>
                         </div>

@@ -35,47 +35,145 @@ function useHorizontalScrollOverflow(ref: RefObject<HTMLDivElement | null>, deps
     return { canScrollLeft, canScrollRight };
 }
 
+const CAROUSEL_AUTOPLAY_MS = 4000;
+const CAROUSEL_TRANSITION_MS = 400;
+
+function getSlideDirection(from: number, to: number, length: number): 1 | -1 {
+    if (from === to) return 1;
+    const forwardSteps = (to - from + length) % length;
+    const backwardSteps = (from - to + length) % length;
+    return forwardSteps <= backwardSteps ? 1 : -1;
+}
+
+function CarouselImage({ src, alt }: { src: string; alt: string }) {
+    return (
+        <Image
+            src={src}
+            alt={alt}
+            fill
+            className="object-contain object-center"
+            sizes="(max-width: 768px) 100vw, 58vw"
+        />
+    );
+}
+
 function ImageCarousel({ images, alt }: { images: string[]; alt: string }) {
     const [currentIndex, setCurrentIndex] = useState(0);
+    const [isHovered, setIsHovered] = useState(false);
+    const [transition, setTransition] = useState<{ from: number; to: number; direction: 1 | -1 } | null>(null);
+    const [slideActive, setSlideActive] = useState(false);
 
-    const goTo = useCallback(
-        (index: number) => {
-            setCurrentIndex((index + images.length) % images.length);
+    const currentIndexRef = useRef(currentIndex);
+    const isTransitioningRef = useRef(false);
+    const transitionTimeoutRef = useRef<ReturnType<typeof setTimeout> | undefined>(undefined);
+
+    currentIndexRef.current = currentIndex;
+
+    const startTransition = useCallback(
+        (targetIndex: number) => {
+            if (isTransitioningRef.current) return;
+
+            const to = ((targetIndex % images.length) + images.length) % images.length;
+            const from = currentIndexRef.current;
+            if (to === from) return;
+
+            if (typeof window !== 'undefined' && window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                setCurrentIndex(to);
+                return;
+            }
+
+            isTransitioningRef.current = true;
+            const direction = getSlideDirection(from, to, images.length);
+            setTransition({ from, to, direction });
+            setSlideActive(false);
+
+            requestAnimationFrame(() => {
+                requestAnimationFrame(() => setSlideActive(true));
+            });
+
+            clearTimeout(transitionTimeoutRef.current);
+            transitionTimeoutRef.current = setTimeout(() => {
+                setCurrentIndex(to);
+                setTransition(null);
+                setSlideActive(false);
+                isTransitioningRef.current = false;
+            }, CAROUSEL_TRANSITION_MS);
         },
         [images.length],
     );
 
+    useEffect(() => {
+        if (images.length <= 1 || isHovered) return;
+
+        const interval = setInterval(() => {
+            startTransition(currentIndexRef.current + 1);
+        }, CAROUSEL_AUTOPLAY_MS);
+
+        return () => clearInterval(interval);
+    }, [images.length, isHovered, startTransition]);
+
+    useEffect(() => () => clearTimeout(transitionTimeoutRef.current), []);
+
     if (images.length === 0) return null;
 
+    const slideTransitionClass = 'transition-transform duration-[400ms] ease-out motion-reduce:transition-none';
+
     return (
-        <div className="relative w-full h-full min-h-[280px] sm:min-h-[360px] md:min-h-[400px] group">
-            <div className="absolute inset-4 sm:inset-6">
-                <Image
-                    src={images[currentIndex]}
-                    alt={`${alt} — ${currentIndex + 1}`}
-                    fill
-                    className="object-contain object-center"
-                    sizes="(max-width: 768px) 100vw, 58vw"
-                />
+        <div
+            className="relative w-full h-full min-h-[280px] sm:min-h-[360px] md:min-h-[400px] group"
+            onMouseEnter={() => setIsHovered(true)}
+            onMouseLeave={() => setIsHovered(false)}
+        >
+            <div className="absolute inset-4 sm:inset-6 overflow-hidden">
+                {transition ? (
+                    <>
+                        <div
+                            className={`absolute inset-0 ${slideTransitionClass} ${
+                                slideActive
+                                    ? transition.direction === 1
+                                        ? '-translate-x-full'
+                                        : 'translate-x-full'
+                                    : 'translate-x-0'
+                            }`}
+                        >
+                            <CarouselImage src={images[transition.from]} alt={`${alt} — ${transition.from + 1}`} />
+                        </div>
+                        <div
+                            className={`absolute inset-0 ${slideTransitionClass} ${
+                                slideActive
+                                    ? 'translate-x-0'
+                                    : transition.direction === 1
+                                      ? 'translate-x-full'
+                                      : '-translate-x-full'
+                            }`}
+                        >
+                            <CarouselImage src={images[transition.to]} alt={`${alt} — ${transition.to + 1}`} />
+                        </div>
+                    </>
+                ) : (
+                    <div className="absolute inset-0">
+                        <CarouselImage src={images[currentIndex]} alt={`${alt} — ${currentIndex + 1}`} />
+                    </div>
+                )}
             </div>
 
             {images.length > 1 && (
                 <>
                     <button
                         type="button"
-                        onClick={() => goTo(currentIndex - 1)}
-                        className="absolute left-3 top-1/2 -translate-y-1/2 w-8 h-8 rounded-full bg-forest/70 border border-emerald-bright/30 text-emerald-bright flex items-center justify-center lg:opacity-0 group-hover:opacity-100 transition-opacity hover:bg-forest"
+                        onClick={() => startTransition(currentIndex - 1)}
+                        className="absolute left-3 top-1/2 -translate-y-1/2 size-12 rounded-full bg-forest/70 border border-emerald-bright/30 text-emerald-bright flex items-center justify-center lg:opacity-0 group-hover:opacity-100 transition-opacity hover:bg-forest cursor-pointer"
                         aria-label="Previous image"
                     >
-                        <ChevronLeft className="w-4 h-4" />
+                        <ChevronLeft className="size-10" />
                     </button>
                     <button
                         type="button"
-                        onClick={() => goTo(currentIndex + 1)}
-                        className="absolute right-3 top-1/2 -translate-y-1/2 w-8 h-8 rounded-full bg-forest/70 border border-emerald-bright/30 text-emerald-bright flex items-center justify-center lg:opacity-0 group-hover:opacity-100 transition-opacity hover:bg-forest"
+                        onClick={() => startTransition(currentIndex + 1)}
+                        className="absolute right-3 top-1/2 -translate-y-1/2 size-12 rounded-full bg-forest/70 border border-emerald-bright/30 text-emerald-bright flex items-center justify-center lg:opacity-0 group-hover:opacity-100 transition-opacity hover:bg-forest cursor-pointer"
                         aria-label="Next image"
                     >
-                        <ChevronRight className="w-4 h-4" />
+                        <ChevronRight className="size-10" />
                     </button>
 
                     <div className="absolute bottom-4 left-1/2 -translate-x-1/2 flex gap-1.5">
@@ -83,7 +181,7 @@ function ImageCarousel({ images, alt }: { images: string[]; alt: string }) {
                             <button
                                 key={index}
                                 type="button"
-                                onClick={() => goTo(index)}
+                                onClick={() => startTransition(index)}
                                 className={`w-1.5 h-1.5 rounded-full transition-colors ${
                                     index === currentIndex ? 'bg-emerald-bright' : 'bg-paper/30 hover:bg-paper/50'
                                 }`}
